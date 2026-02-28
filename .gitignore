@@ -1,0 +1,16 @@
+# Build output
+bin/
+
+# Claude Code local settings
+.claude/settings.local.json
+.claude/tasks/
+.claude/teams/
+.claude/worktrees/
+
+# OS
+.DS_Store
+
+# Go
+*.exe
+*.test
+*.out

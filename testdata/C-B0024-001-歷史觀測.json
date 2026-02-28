@@ -1,0 +1,388 @@
+{
+    "success": "true",
+    "result": {
+        "resource_id": "C-B0024-001",
+        "fields": [
+            {
+                "id": "StationName",
+                "type": "String"
+            },
+            {
+                "id": "StationID",
+                "type": "String"
+            },
+            {
+                "id": "StationNameEN",
+                "type": "String"
+            },
+            {
+                "id": "StationAttribute",
+                "type": "String"
+            },
+            {
+                "id": "DateTime",
+                "type": "String"
+            },
+            {
+                "id": "AirPressure",
+                "type": "String"
+            },
+            {
+                "id": "AirTemperature",
+                "type": "String"
+            },
+            {
+                "id": "RelativeHumidity",
+                "type": "String"
+            },
+            {
+                "id": "WindSpeed",
+                "type": "String"
+            },
+            {
+                "id": "WindDirection",
+                "type": "String"
+            },
+            {
+                "id": "Precipitation",
+                "type": "String"
+            },
+            {
+                "id": "SunshineDuration",
+                "type": "String"
+            },
+            {
+                "id": "Date",
+                "type": "Date"
+            },
+            {
+                "id": "Maximum",
+                "type": "Double"
+            },
+            {
+                "id": "Minimum",
+                "type": "Double"
+            },
+            {
+                "id": "Mean",
+                "type": "Double"
+            }
+        ]
+    },
+    "records": {
+        "location": [
+            {
+                "station": {
+                    "StationID": "466881",
+                    "StationName": "\u65b0\u5317",
+                    "StationNameEN": "New Taipei",
+                    "StationAttribute": "\u7f72\u5c6c\u6709\u4eba\u6c23\u8c61\u7ad9"
+                },
+                "stationObsTimes": {
+                    "stationObsTime": [
+                        {
+                            "weatherElements": {
+                                "AirPressure": "1007.5",
+                                "AirTemperature": "19.4",
+                                "RelativeHumidity": "97",
+                                "WindSpeed": "0.2",
+                                "WindDirection": "\u975c\u98a8,Calm",
+                                "Precipitation": "T",
+                                "SunshineDuration": "0.0"
+                            },
+                            "DateTime": "2026-02-27T01:00:00+08:00"
+                        },
+                        {
+                            "weatherElements": {
+                                "AirPressure": "1007.0",
+                                "AirTemperature": "19.5",
+                                "RelativeHumidity": "96",
+                                "WindSpeed": "0.0",
+                                "WindDirection": "\u975c\u98a8,Calm",
+                                "Precipitation": "0.0",
+                                "SunshineDuration": "0.0"
+                            },
+                            "DateTime": "2026-02-27T02:00:00+08:00"
+                        },
+                        {
+                            "weatherElements": {
+                                "AirPressure": "1007.7",
+                                "AirTemperature": "19.2",
+                                "RelativeHumidity": "96",
+                                "WindSpeed": "0.2",
+                                "WindDirection": "\u975c\u98a8,Calm",
+                                "Precipitation": "2.0",
+                                "SunshineDuration": "0.0"
+                            },
+                            "DateTime": "2026-02-27T03:00:00+08:00"
+                        },
+                        {
+                            "weatherElements": {
+                                "AirPressure": "1008.3",
+                                "AirTemperature": "19.2",
+                                "RelativeHumidity": "93",
+                                "WindSpeed": "1.9",
+                                "WindDirection": "X,X",
+                                "Precipitation": "4.0",
+                                "SunshineDuration": "0.0"
+                            },
+                            "DateTime": "2026-02-27T04:00:00+08:00"
+                        },
+                        {
+                            "weatherElements": {
+                                "AirPressure": "1008.4",
+                                "AirTemperature": "18.9",
+                                "RelativeHumidity": "95",
+                                "WindSpeed": "0.8",
+                                "WindDirection": "\u5317,N",
+                                "Precipitation": "6.5",
+                                "SunshineDuration": "0.0"
+                            },
+                            "DateTime": "2026-02-27T05:00:00+08:00"
+                        },
+                        {
+                            "weatherElements": {
+                                "AirPressure": "1009.0",
+                                "AirTemperature": "18.8",
+                                "RelativeHumidity": "96",
+                                "WindSpeed": "1.4",
+                                "WindDirection": "X,X",
+                                "Precipitation": "2.0",
+                                "SunshineDuration": "0.0"
+                            },
+                            "DateTime": "2026-02-27T06:00:00+08:00"
+                        },
+                        {
+                            "weatherElements": {
+                                "AirPressure": "1009.3",
+                                "AirTemperature": "18.6",
+                                "RelativeHumidity": "97",
+                                "WindSpeed": "0.5",
+                                "WindDirection": "X,X",
+                                "Precipitation": "1.0",
+                                "SunshineDuration": "0.0"
+                            },
+                            "DateTime": "2026-02-27T07:00:00+08:00"
+                        },
+                        {
+                            "weatherElements": {
+                                "AirPressure": "1009.5",
+                                "AirTemperature": "18.8",
+                                "RelativeHumidity": "96",
+                                "WindSpeed": "0.8",
+                                "WindDirection": "X,X",
+                                "Precipitation": "1.0",
+                                "SunshineDuration": "0.0"
+                            },
+                            "DateTime": "2026-02-27T08:00:00+08:00"
+                        },
+                        {
+                            "weatherElements": {
+                                "AirPressure": "1009.5",
+                                "AirTemperature": "18.8",
+                                "RelativeHumidity": "96",
+                                "WindSpeed": "0.3",
+                                "WindDirection": "X,X",
+                                "Precipitation": "1.5",
+                                "SunshineDuration": "0.0"
+                            },
+                            "DateTime": "2026-02-27T09:00:00+08:00"
+                        },
+                        {
+                            "weatherElements": {
+                                "AirPressure": "1008.4",
+                                "AirTemperature": "20.0",
+                                "RelativeHumidity": "93",
+                                "WindSpeed": "0.6",
+                                "WindDirection": "X,X",
+                                "Precipitation": "0.5",
+                                "SunshineDuration": "0.0"
+                            },
+                            "DateTime": "2026-02-27T10:00:00+08:00"
+                        },
+                        {
+                            "weatherElements": {
+                                "AirPressure": "1008.0",
+                                "AirTemperature": "23.2",
+                                "RelativeHumidity": "77",
+                                "WindSpeed": "1.0",
+                                "WindDirection": "\u6771\u5317,NE",
+                                "Precipitation": "0.0",
+                                "SunshineDuration": "0.4"
+                            },
+                            "DateTime": "2026-02-27T11:00:00+08:00"
+                        },
+                        {
+                            "weatherElements": {
+                                "AirPressure": "1007.6",
+                                "AirTemperature": "25.5",
+                                "RelativeHumidity": "57",
+                                "WindSpeed": "3.8",
+                                "WindDirection": "X,X",
+                                "Precipitation": "0.0",
+                                "SunshineDuration": "0.4"
+                            },
+                            "DateTime": "2026-02-27T12:00:00+08:00"
+                        },
+                        {
+                            "weatherElements": {
+                                "AirPressure": "1007.5",
+                                "AirTemperature": "25.1",
+                                "RelativeHumidity": "55",
+                                "WindSpeed": "3.1",
+                                "WindDirection": "X,X",
+                                "Precipitation": "0.0",
+                                "SunshineDuration": "0.2"
+                            },
+                            "DateTime": "2026-02-27T13:00:00+08:00"
+                        },
+                        {
+                            "weatherElements": {
+                                "AirPressure": "1006.8",
+                                "AirTemperature": "25.6",
+                                "RelativeHumidity": "55",
+                                "WindSpeed": "4.0",
+                                "WindDirection": "X,X",
+                                "Precipitation": "0.0",
+                                "SunshineDuration": "0.2"
+                            },
+                            "DateTime": "2026-02-27T14:00:00+08:00"
+                        },
+                        {
+                            "weatherElements": {
+                                "AirPressure": "1006.9",
+                                "AirTemperature": "22.7",
+                                "RelativeHumidity": "73",
+                                "WindSpeed": "2.0",
+                                "WindDirection": "X,X",
+                                "Precipitation": "0.0",
+                                "SunshineDuration": "0.0"
+                            },
+                            "DateTime": "2026-02-27T15:00:00+08:00"
+                        },
+                        {
+                            "weatherElements": {
+                                "AirPressure": "1007.1",
+                                "AirTemperature": "21.7",
+                                "RelativeHumidity": "77",
+                                "WindSpeed": "1.9",
+                                "WindDirection": "X,X",
+                                "Precipitation": "0.0",
+                                "SunshineDuration": "0.0"
+                            },
+                            "DateTime": "2026-02-27T16:00:00+08:00"
+                        },
+                        {
+                            "weatherElements": {
+                                "AirPressure": "1007.5",
+                                "AirTemperature": "20.7",
+                                "RelativeHumidity": "79",
+                                "WindSpeed": "1.0",
+                                "WindDirection": "X,X",
+                                "Precipitation": "0.0",
+                                "SunshineDuration": "0.0"
+                            },
+                            "DateTime": "2026-02-27T17:00:00+08:00"
+                        },
+                        {
+                            "weatherElements": {
+                                "AirPressure": "1008.7",
+                                "AirTemperature": "19.2",
+                                "RelativeHumidity": "85",
+                                "WindSpeed": "2.7",
+                                "WindDirection": "X,X",
+                                "Precipitation": "0.0",
+                                "SunshineDuration": "0.0"
+                            },
+                            "DateTime": "2026-02-27T18:00:00+08:00"
+                        },
+                        {
+                            "weatherElements": {
+                                "AirPressure": "1009.4",
+                                "AirTemperature": "18.5",
+                                "RelativeHumidity": "86",
+                                "WindSpeed": "3.7",
+                                "WindDirection": "X,X",
+                                "Precipitation": "T",
+                                "SunshineDuration": "0.0"
+                            },
+                            "DateTime": "2026-02-27T19:00:00+08:00"
+                        },
+                        {
+                            "weatherElements": {
+                                "AirPressure": "1010.4",
+                                "AirTemperature": "18.1",
+                                "RelativeHumidity": "86",
+                                "WindSpeed": "3.8",
+                                "WindDirection": "X,X",
+                                "Precipitation": "T",
+                                "SunshineDuration": "0.0"
+                            },
+                            "DateTime": "2026-02-27T20:00:00+08:00"
+                        },
+                        {
+                            "weatherElements": {
+                                "AirPressure": "1010.5",
+                                "AirTemperature": "18.1",
+                                "RelativeHumidity": "85",
+                                "WindSpeed": "1.3",
+                                "WindDirection": "X,X",
+                                "Precipitation": "T",
+                                "SunshineDuration": "0.0"
+                            },
+                            "DateTime": "2026-02-27T21:00:00+08:00"
+                        },
+                        {
+                            "weatherElements": {
+                                "AirPressure": "1010.7",
+                                "AirTemperature": "18.0",
+                                "RelativeHumidity": "86",
+                                "WindSpeed": "1.5",
+                                "WindDirection": "X,X",
+                                "Precipitation": "T",
+                                "SunshineDuration": "0.0"
+                            },
+                            "DateTime": "2026-02-27T22:00:00+08:00"
+                        },
+                        {
+                            "weatherElements": {
+                                "AirPressure": "1011.1",
+                                "AirTemperature": "18.0",
+                                "RelativeHumidity": "87",
+                                "WindSpeed": "2.0",
+                                "WindDirection": "X,X",
+                                "Precipitation": "T",
+                                "SunshineDuration": "0.0"
+                            },
+                            "DateTime": "2026-02-27T23:00:00+08:00"
+                        },
+                        {
+                            "weatherElements": {
+                                "AirPressure": "1011.1",
+                                "AirTemperature": "18.0",
+                                "RelativeHumidity": "88",
+                                "WindSpeed": "2.5",
+                                "WindDirection": "X,X",
+                                "Precipitation": "0.0",
+                                "SunshineDuration": "0.0"
+                            },
+                            "DateTime": "2026-02-28T00:00:00+08:00"
+                        }
+                    ]
+                },
+                "stationObsStatistics": {
+                    "AirTemperature": {
+                        "daily": [
+                            {
+                                "Date": "2026-02-27",
+                                "Maximum": 25.9,
+                                "Minimum": 17.9,
+                                "Mean": 20.2
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

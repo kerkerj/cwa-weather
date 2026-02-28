@@ -1,0 +1,687 @@
+{
+    "success": "true",
+    "result": {
+        "resource_id": "F-A0085-002",
+        "fields": [
+            {
+                "id": "datasetDescription",
+                "type": "String"
+            },
+            {
+                "id": "CountyName",
+                "type": "String"
+            },
+            {
+                "id": "DatasetId",
+                "type": "String"
+            },
+            {
+                "id": "TownName",
+                "type": "String"
+            },
+            {
+                "id": "Geocode",
+                "type": "String"
+            },
+            {
+                "id": "Latitude",
+                "type": "String"
+            },
+            {
+                "id": "Longitude",
+                "type": "String"
+            },
+            {
+                "id": "ColdInjuryIndex",
+                "type": "Integer"
+            },
+            {
+                "id": "ColdInjuryWarning",
+                "type": "String"
+            },
+            {
+                "id": "StartTime",
+                "type": "Timestamp"
+            },
+            {
+                "id": "EndTime",
+                "type": "Timestamp"
+            }
+        ]
+    },
+    "records": {
+        "datasetDescription": "\u5065\u5eb7\u6c23\u8c61\u51b7\u50b7\u5bb3\u6307\u6578\u53ca\u8b66\u793a\u5168\u81fa\u5404\u9109\u93ae\u4e94\u65e5\u9810\u5831",
+        "DatasetId": "A0085-002",
+        "Locations": [
+            {
+                "CountyName": "\u5357\u6295\u7e23",
+                "Location": [
+                    {
+                        "TownName": "\u4ec1\u611b\u9109",
+                        "Geocode": "10008130",
+                        "Latitude": "24.02319908",
+                        "Longitude": "121.12400050",
+                        "Time": [
+                            {
+                                "StartTime": "2026-03-04 06:00:00",
+                                "EndTime": "2026-03-06 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 13,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-02 00:00:00",
+                                "EndTime": "2026-03-03 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 17,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-02 06:00:00",
+                                "EndTime": "2026-03-04 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 18,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-03 06:00:00",
+                                "EndTime": "2026-03-05 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 16,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-05 06:00:00",
+                                "EndTime": "2026-03-07 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 13,
+                                    "ColdInjuryWarning": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "TownName": "\u8349\u5c6f\u93ae",
+                        "Geocode": "10008030",
+                        "Latitude": "23.97550011",
+                        "Longitude": "120.67199710",
+                        "Time": [
+                            {
+                                "StartTime": "2026-03-02 00:00:00",
+                                "EndTime": "2026-03-03 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 22,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-02 06:00:00",
+                                "EndTime": "2026-03-04 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 23,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-03 06:00:00",
+                                "EndTime": "2026-03-05 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 18,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-04 06:00:00",
+                                "EndTime": "2026-03-06 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 18,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-05 06:00:00",
+                                "EndTime": "2026-03-07 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 20,
+                                    "ColdInjuryWarning": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "TownName": "\u57d4\u91cc\u93ae",
+                        "Geocode": "10008020",
+                        "Latitude": "23.96829987",
+                        "Longitude": "120.96099850",
+                        "Time": [
+                            {
+                                "StartTime": "2026-03-03 06:00:00",
+                                "EndTime": "2026-03-05 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 19,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-02 06:00:00",
+                                "EndTime": "2026-03-04 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 21,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-04 06:00:00",
+                                "EndTime": "2026-03-06 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 17,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-05 06:00:00",
+                                "EndTime": "2026-03-07 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 17,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-02 00:00:00",
+                                "EndTime": "2026-03-03 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 20,
+                                    "ColdInjuryWarning": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "TownName": "\u9e7f\u8c37\u9109",
+                        "Geocode": "10008070",
+                        "Latitude": "23.74740028",
+                        "Longitude": "120.74500270",
+                        "Time": [
+                            {
+                                "StartTime": "2026-03-05 06:00:00",
+                                "EndTime": "2026-03-07 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 17,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-02 00:00:00",
+                                "EndTime": "2026-03-03 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 19,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-03 06:00:00",
+                                "EndTime": "2026-03-05 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 18,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-04 06:00:00",
+                                "EndTime": "2026-03-06 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 17,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-02 06:00:00",
+                                "EndTime": "2026-03-04 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 20,
+                                    "ColdInjuryWarning": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "TownName": "\u6c34\u91cc\u9109",
+                        "Geocode": "10008110",
+                        "Latitude": "23.81310081",
+                        "Longitude": "120.84799960",
+                        "Time": [
+                            {
+                                "StartTime": "2026-03-02 06:00:00",
+                                "EndTime": "2026-03-04 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 21,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-03 06:00:00",
+                                "EndTime": "2026-03-05 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 20,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-04 06:00:00",
+                                "EndTime": "2026-03-06 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 19,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-05 06:00:00",
+                                "EndTime": "2026-03-07 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 19,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-02 00:00:00",
+                                "EndTime": "2026-03-03 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 21,
+                                    "ColdInjuryWarning": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "TownName": "\u4e2d\u5bee\u9109",
+                        "Geocode": "10008080",
+                        "Latitude": "23.88069916",
+                        "Longitude": "120.75800320",
+                        "Time": [
+                            {
+                                "StartTime": "2026-03-02 00:00:00",
+                                "EndTime": "2026-03-03 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 22,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-03 06:00:00",
+                                "EndTime": "2026-03-05 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 19,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-05 06:00:00",
+                                "EndTime": "2026-03-07 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 19,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-02 06:00:00",
+                                "EndTime": "2026-03-04 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 23,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-04 06:00:00",
+                                "EndTime": "2026-03-06 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 19,
+                                    "ColdInjuryWarning": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "TownName": "\u7af9\u5c71\u93ae",
+                        "Geocode": "10008040",
+                        "Latitude": "23.75939941",
+                        "Longitude": "120.66300200",
+                        "Time": [
+                            {
+                                "StartTime": "2026-03-03 06:00:00",
+                                "EndTime": "2026-03-05 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 19,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-05 06:00:00",
+                                "EndTime": "2026-03-07 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 20,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-04 06:00:00",
+                                "EndTime": "2026-03-06 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 19,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-02 00:00:00",
+                                "EndTime": "2026-03-03 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 22,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-02 06:00:00",
+                                "EndTime": "2026-03-04 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 23,
+                                    "ColdInjuryWarning": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "TownName": "\u540d\u9593\u9109",
+                        "Geocode": "10008060",
+                        "Latitude": "23.84009933",
+                        "Longitude": "120.69499970",
+                        "Time": [
+                            {
+                                "StartTime": "2026-03-03 06:00:00",
+                                "EndTime": "2026-03-05 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 19,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-05 06:00:00",
+                                "EndTime": "2026-03-07 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 19,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-02 00:00:00",
+                                "EndTime": "2026-03-03 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 21,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-02 06:00:00",
+                                "EndTime": "2026-03-04 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 22,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-04 06:00:00",
+                                "EndTime": "2026-03-06 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 19,
+                                    "ColdInjuryWarning": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "TownName": "\u4fe1\u7fa9\u9109",
+                        "Geocode": "10008120",
+                        "Latitude": "23.69860077",
+                        "Longitude": "120.84600070",
+                        "Time": [
+                            {
+                                "StartTime": "2026-03-02 06:00:00",
+                                "EndTime": "2026-03-04 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 20,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-05 06:00:00",
+                                "EndTime": "2026-03-07 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 17,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-02 00:00:00",
+                                "EndTime": "2026-03-03 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 20,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-03 06:00:00",
+                                "EndTime": "2026-03-05 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 19,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-04 06:00:00",
+                                "EndTime": "2026-03-06 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 18,
+                                    "ColdInjuryWarning": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "TownName": "\u570b\u59d3\u9109",
+                        "Geocode": "10008100",
+                        "Latitude": "24.04190063",
+                        "Longitude": "120.84899900",
+                        "Time": [
+                            {
+                                "StartTime": "2026-03-04 06:00:00",
+                                "EndTime": "2026-03-06 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 19,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-05 06:00:00",
+                                "EndTime": "2026-03-07 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 19,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-02 06:00:00",
+                                "EndTime": "2026-03-04 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 23,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-02 00:00:00",
+                                "EndTime": "2026-03-03 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 21,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-03 06:00:00",
+                                "EndTime": "2026-03-05 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 20,
+                                    "ColdInjuryWarning": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "TownName": "\u5357\u6295\u5e02",
+                        "Geocode": "10008010",
+                        "Latitude": "23.91329956",
+                        "Longitude": "120.67900090",
+                        "Time": [
+                            {
+                                "StartTime": "2026-03-05 06:00:00",
+                                "EndTime": "2026-03-07 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 20,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-04 06:00:00",
+                                "EndTime": "2026-03-06 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 18,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-02 00:00:00",
+                                "EndTime": "2026-03-03 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 22,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-02 06:00:00",
+                                "EndTime": "2026-03-04 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 23,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-03 06:00:00",
+                                "EndTime": "2026-03-05 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 18,
+                                    "ColdInjuryWarning": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "TownName": "\u96c6\u96c6\u93ae",
+                        "Geocode": "10008050",
+                        "Latitude": "23.83020020",
+                        "Longitude": "120.77799990",
+                        "Time": [
+                            {
+                                "StartTime": "2026-03-03 06:00:00",
+                                "EndTime": "2026-03-05 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 19,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-02 00:00:00",
+                                "EndTime": "2026-03-03 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 21,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-02 06:00:00",
+                                "EndTime": "2026-03-04 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 22,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-05 06:00:00",
+                                "EndTime": "2026-03-07 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 19,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-04 06:00:00",
+                                "EndTime": "2026-03-06 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 19,
+                                    "ColdInjuryWarning": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "TownName": "\u9b5a\u6c60\u9109",
+                        "Geocode": "10008090",
+                        "Latitude": "23.89749908",
+                        "Longitude": "120.92700200",
+                        "Time": [
+                            {
+                                "StartTime": "2026-03-05 06:00:00",
+                                "EndTime": "2026-03-07 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 17,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-02 00:00:00",
+                                "EndTime": "2026-03-03 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 20,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-03 06:00:00",
+                                "EndTime": "2026-03-05 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 18,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-04 06:00:00",
+                                "EndTime": "2026-03-06 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 17,
+                                    "ColdInjuryWarning": ""
+                                }
+                            },
+                            {
+                                "StartTime": "2026-03-02 06:00:00",
+                                "EndTime": "2026-03-04 06:00:00",
+                                "WeatherElements": {
+                                    "ColdInjuryIndex": 20,
+                                    "ColdInjuryWarning": ""
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,194 @@
+{
+    "success": "true",
+    "result": {
+        "resource_id": "W-C0033-001",
+        "fields": [
+            {
+                "id": "locationName",
+                "type": "String"
+            },
+            {
+                "id": "geocode",
+                "type": "Double"
+            },
+            {
+                "id": "language",
+                "type": "String"
+            },
+            {
+                "id": "phenomena",
+                "type": "String"
+            },
+            {
+                "id": "significance",
+                "type": "String"
+            },
+            {
+                "id": "startTime",
+                "type": "Timestamp"
+            },
+            {
+                "id": "endTime",
+                "type": "Timestamp"
+            }
+        ]
+    },
+    "records": {
+        "location": [
+            {
+                "locationName": "\u65b0\u7af9\u5e02",
+                "geocode": 10018.0,
+                "hazardConditions": {
+                    "hazards": []
+                }
+            },
+            {
+                "locationName": "\u5f70\u5316\u7e23",
+                "geocode": 10007.0,
+                "hazardConditions": {
+                    "hazards": []
+                }
+            },
+            {
+                "locationName": "\u5c4f\u6771\u7e23",
+                "geocode": 10013.0,
+                "hazardConditions": {
+                    "hazards": []
+                }
+            },
+            {
+                "locationName": "\u81fa\u6771\u7e23",
+                "geocode": 10014.0,
+                "hazardConditions": {
+                    "hazards": []
+                }
+            },
+            {
+                "locationName": "\u65b0\u5317\u5e02",
+                "geocode": 65.0,
+                "hazardConditions": {
+                    "hazards": []
+                }
+            },
+            {
+                "locationName": "\u57fa\u9686\u5e02",
+                "geocode": 10017.0,
+                "hazardConditions": {
+                    "hazards": []
+                }
+            },
+            {
+                "locationName": "\u6843\u5712\u5e02",
+                "geocode": 68.0,
+                "hazardConditions": {
+                    "hazards": []
+                }
+            },
+            {
+                "locationName": "\u65b0\u7af9\u7e23",
+                "geocode": 10004.0,
+                "hazardConditions": {
+                    "hazards": []
+                }
+            },
+            {
+                "locationName": "\u5609\u7fa9\u7e23",
+                "geocode": 10010.0,
+                "hazardConditions": {
+                    "hazards": []
+                }
+            },
+            {
+                "locationName": "\u81fa\u5357\u5e02",
+                "geocode": 67.0,
+                "hazardConditions": {
+                    "hazards": []
+                }
+            },
+            {
+                "locationName": "\u82b1\u84ee\u7e23",
+                "geocode": 10015.0,
+                "hazardConditions": {
+                    "hazards": []
+                }
+            },
+            {
+                "locationName": "\u5609\u7fa9\u5e02",
+                "geocode": 10020.0,
+                "hazardConditions": {
+                    "hazards": []
+                }
+            },
+            {
+                "locationName": "\u6f8e\u6e56\u7e23",
+                "geocode": 10016.0,
+                "hazardConditions": {
+                    "hazards": []
+                }
+            },
+            {
+                "locationName": "\u96f2\u6797\u7e23",
+                "geocode": 10009.0,
+                "hazardConditions": {
+                    "hazards": []
+                }
+            },
+            {
+                "locationName": "\u91d1\u9580\u7e23",
+                "geocode": 9020.0,
+                "hazardConditions": {
+                    "hazards": []
+                }
+            },
+            {
+                "locationName": "\u81fa\u4e2d\u5e02",
+                "geocode": 66.0,
+                "hazardConditions": {
+                    "hazards": []
+                }
+            },
+            {
+                "locationName": "\u5357\u6295\u7e23",
+                "geocode": 10008.0,
+                "hazardConditions": {
+                    "hazards": []
+                }
+            },
+            {
+                "locationName": "\u5b9c\u862d\u7e23",
+                "geocode": 10002.0,
+                "hazardConditions": {
+                    "hazards": []
+                }
+            },
+            {
+                "locationName": "\u9023\u6c5f\u7e23",
+                "geocode": 9007.0,
+                "hazardConditions": {
+                    "hazards": []
+                }
+            },
+            {
+                "locationName": "\u81fa\u5317\u5e02",
+                "geocode": 63.0,
+                "hazardConditions": {
+                    "hazards": []
+                }
+            },
+            {
+                "locationName": "\u82d7\u6817\u7e23",
+                "geocode": 10005.0,
+                "hazardConditions": {
+                    "hazards": []
+                }
+            },
+            {
+                "locationName": "\u9ad8\u96c4\u5e02",
+                "geocode": 64.0,
+                "hazardConditions": {
+                    "hazards": []
+                }
+            }
+        ]
+    }
+}

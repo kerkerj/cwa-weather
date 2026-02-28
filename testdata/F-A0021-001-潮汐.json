@@ -1,0 +1,1365 @@
+{
+    "success": "true",
+    "result": {
+        "resource_id": "F-A0021-001",
+        "fields": [
+            {
+                "id": "LocationName",
+                "type": "String"
+            },
+            {
+                "id": "LocationId",
+                "type": "String"
+            },
+            {
+                "id": "Latitude",
+                "type": "Double"
+            },
+            {
+                "id": "Longitude",
+                "type": "Double"
+            },
+            {
+                "id": "Date",
+                "type": "Date"
+            },
+            {
+                "id": "LunarDate",
+                "type": "Date"
+            },
+            {
+                "id": "TideRange",
+                "type": "String"
+            },
+            {
+                "id": "DateTime",
+                "type": "DateTime"
+            },
+            {
+                "id": "AboveTWVD",
+                "type": "String"
+            },
+            {
+                "id": "AboveLocalMSL",
+                "type": "Integer"
+            },
+            {
+                "id": "AboveChartDatum",
+                "type": "Integer"
+            }
+        ]
+    },
+    "records": {
+        "dataid": "F-A0021-001",
+        "note": "\u6f6e\u6c50\u9810\u5831(\u672a\u4f861\u500b\u6708\u6f6e\u6c50\u9810\u5831\uff0c\u9109\u93ae\u3001\u5927\u6f6e\u5c0f\u6f6e\u3001\u6eff\u6f6e\u4e7e\u6f6e\u3001\u6642\u9593\u3001\u6f6e\u9ad8)",
+        "TideForecasts": [
+            {
+                "Location": {
+                    "LocationId": "10015050",
+                    "LocationName": "\u82b1\u84ee\u7e23\u5409\u5b89\u9109",
+                    "Latitude": 23.9424,
+                    "Longitude": 121.6125,
+                    "TimePeriods": {
+                        "Daily": [
+                            {
+                                "Date": "2026-03-11",
+                                "LunarDate": "2026-01-23",
+                                "TideRange": "\u5c0f",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-11T03:34:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-8",
+                                            "AboveLocalMSL": 2,
+                                            "AboveChartDatum": 115
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-11T10:00:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "45",
+                                            "AboveLocalMSL": 55,
+                                            "AboveChartDatum": 167
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-11T17:35:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-27",
+                                            "AboveLocalMSL": -16,
+                                            "AboveChartDatum": 95
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-06",
+                                "LunarDate": "2026-01-18",
+                                "TideRange": "\u4e2d",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-06T01:36:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-61",
+                                            "AboveLocalMSL": -50,
+                                            "AboveChartDatum": 61
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-06T07:46:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "71",
+                                            "AboveLocalMSL": 81,
+                                            "AboveChartDatum": 193
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-06T13:52:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-64",
+                                            "AboveLocalMSL": -53,
+                                            "AboveChartDatum": 58
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-06T20:11:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "65",
+                                            "AboveLocalMSL": 75,
+                                            "AboveChartDatum": 187
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-10",
+                                "LunarDate": "2026-01-22",
+                                "TideRange": "\u5c0f",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-10T03:10:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-18",
+                                            "AboveLocalMSL": -7,
+                                            "AboveChartDatum": 104
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-10T09:24:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "54",
+                                            "AboveLocalMSL": 64,
+                                            "AboveChartDatum": 176
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-10T16:21:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-37",
+                                            "AboveLocalMSL": -26,
+                                            "AboveChartDatum": 85
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-10T22:54:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "13",
+                                            "AboveLocalMSL": 23,
+                                            "AboveChartDatum": 136
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-27",
+                                "LunarDate": "2026-02-09",
+                                "TideRange": "\u5c0f",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-27T02:52:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "17",
+                                            "AboveLocalMSL": 27,
+                                            "AboveChartDatum": 140
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-27T06:52:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "7",
+                                            "AboveLocalMSL": 17,
+                                            "AboveChartDatum": 130
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-27T13:17:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "41",
+                                            "AboveLocalMSL": 51,
+                                            "AboveChartDatum": 163
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-27T20:57:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-51",
+                                            "AboveLocalMSL": -40,
+                                            "AboveChartDatum": 72
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-16",
+                                "LunarDate": "2026-01-28",
+                                "TideRange": "\u4e2d",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-16T05:23:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "45",
+                                            "AboveLocalMSL": 55,
+                                            "AboveChartDatum": 167
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-16T10:47:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-22",
+                                            "AboveLocalMSL": -11,
+                                            "AboveChartDatum": 100
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-16T16:46:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "64",
+                                            "AboveLocalMSL": 74,
+                                            "AboveChartDatum": 186
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-16T23:25:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-64",
+                                            "AboveLocalMSL": -53,
+                                            "AboveChartDatum": 59
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-28",
+                                "LunarDate": "2026-02-10",
+                                "TideRange": "\u5c0f",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-28T03:58:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "28",
+                                            "AboveLocalMSL": 38,
+                                            "AboveChartDatum": 151
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-28T09:00:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-3",
+                                            "AboveLocalMSL": 7,
+                                            "AboveChartDatum": 120
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-28T15:00:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "48",
+                                            "AboveLocalMSL": 58,
+                                            "AboveChartDatum": 171
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-28T21:57:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-57",
+                                            "AboveLocalMSL": -46,
+                                            "AboveChartDatum": 65
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-01",
+                                "LunarDate": "2026-01-13",
+                                "TideRange": "\u5927",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-01T05:39:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "44",
+                                            "AboveLocalMSL": 54,
+                                            "AboveChartDatum": 166
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-01T10:56:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-26",
+                                            "AboveLocalMSL": -15,
+                                            "AboveChartDatum": 96
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-01T17:04:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "75",
+                                            "AboveLocalMSL": 85,
+                                            "AboveChartDatum": 197
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-01T23:42:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-83",
+                                            "AboveLocalMSL": -72,
+                                            "AboveChartDatum": 40
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-29",
+                                "LunarDate": "2026-02-11",
+                                "TideRange": "\u4e2d",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-29T04:34:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "40",
+                                            "AboveLocalMSL": 50,
+                                            "AboveChartDatum": 162
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-29T10:01:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-18",
+                                            "AboveLocalMSL": -7,
+                                            "AboveChartDatum": 104
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-29T16:05:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "59",
+                                            "AboveLocalMSL": 69,
+                                            "AboveChartDatum": 182
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-29T22:39:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-61",
+                                            "AboveLocalMSL": -51,
+                                            "AboveChartDatum": 61
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-04",
+                                "LunarDate": "2026-01-16",
+                                "TideRange": "\u5927",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-04T00:44:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-79",
+                                            "AboveLocalMSL": -68,
+                                            "AboveChartDatum": 43
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-04T07:00:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "66",
+                                            "AboveLocalMSL": 76,
+                                            "AboveChartDatum": 189
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-04T12:46:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-59",
+                                            "AboveLocalMSL": -48,
+                                            "AboveChartDatum": 63
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-04T19:04:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "83",
+                                            "AboveLocalMSL": 93,
+                                            "AboveChartDatum": 205
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-18",
+                                "LunarDate": "2026-01-30",
+                                "TideRange": "\u5927",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-18T06:10:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "64",
+                                            "AboveLocalMSL": 74,
+                                            "AboveChartDatum": 186
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-18T11:54:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-52",
+                                            "AboveLocalMSL": -41,
+                                            "AboveChartDatum": 70
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-18T18:04:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "82",
+                                            "AboveLocalMSL": 92,
+                                            "AboveChartDatum": 205
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-07",
+                                "LunarDate": "2026-01-19",
+                                "TideRange": "\u4e2d",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-07T02:00:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-51",
+                                            "AboveLocalMSL": -40,
+                                            "AboveChartDatum": 72
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-07T08:08:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "70",
+                                            "AboveLocalMSL": 80,
+                                            "AboveChartDatum": 192
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-07T14:25:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-61",
+                                            "AboveLocalMSL": -50,
+                                            "AboveChartDatum": 61
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-07T20:44:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "53",
+                                            "AboveLocalMSL": 63,
+                                            "AboveChartDatum": 175
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-14",
+                                "LunarDate": "2026-01-26",
+                                "TideRange": "\u5c0f",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-14T04:37:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "24",
+                                            "AboveLocalMSL": 34,
+                                            "AboveChartDatum": 146
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-14T09:16:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "4",
+                                            "AboveLocalMSL": 14,
+                                            "AboveChartDatum": 126
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-14T15:00:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "38",
+                                            "AboveLocalMSL": 48,
+                                            "AboveChartDatum": 161
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-14T22:23:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-45",
+                                            "AboveLocalMSL": -34,
+                                            "AboveChartDatum": 77
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-23",
+                                "LunarDate": "2026-02-05",
+                                "TideRange": "\u5927",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-23T02:19:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-40",
+                                            "AboveLocalMSL": -29,
+                                            "AboveChartDatum": 83
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-23T08:31:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "78",
+                                            "AboveLocalMSL": 88,
+                                            "AboveChartDatum": 200
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-23T15:11:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-77",
+                                            "AboveLocalMSL": -66,
+                                            "AboveChartDatum": 46
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-23T21:39:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "41",
+                                            "AboveLocalMSL": 51,
+                                            "AboveChartDatum": 163
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-05",
+                                "LunarDate": "2026-01-17",
+                                "TideRange": "\u4e2d",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-05T01:11:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-71",
+                                            "AboveLocalMSL": -60,
+                                            "AboveChartDatum": 51
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-05T07:23:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "70",
+                                            "AboveLocalMSL": 80,
+                                            "AboveChartDatum": 192
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-05T13:19:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-64",
+                                            "AboveLocalMSL": -53,
+                                            "AboveChartDatum": 59
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-05T19:38:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "76",
+                                            "AboveLocalMSL": 86,
+                                            "AboveChartDatum": 198
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-04-01",
+                                "LunarDate": "2026-02-14",
+                                "TideRange": "\u4e2d",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-04-01T05:54:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "67",
+                                            "AboveLocalMSL": 77,
+                                            "AboveChartDatum": 189
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-04-01T11:54:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-59",
+                                            "AboveLocalMSL": -48,
+                                            "AboveChartDatum": 63
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-04-01T18:14:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "75",
+                                            "AboveLocalMSL": 85,
+                                            "AboveChartDatum": 197
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-19",
+                                "LunarDate": "2026-02-01",
+                                "TideRange": "\u5927",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-19T00:20:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-71",
+                                            "AboveLocalMSL": -61,
+                                            "AboveChartDatum": 51
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-19T06:35:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "72",
+                                            "AboveLocalMSL": 82,
+                                            "AboveChartDatum": 195
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-19T12:29:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-66",
+                                            "AboveLocalMSL": -55,
+                                            "AboveChartDatum": 56
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-19T18:43:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "85",
+                                            "AboveLocalMSL": 95,
+                                            "AboveChartDatum": 207
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-24",
+                                "LunarDate": "2026-02-06",
+                                "TideRange": "\u4e2d",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-24T02:51:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-26",
+                                            "AboveLocalMSL": -15,
+                                            "AboveChartDatum": 96
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-24T09:08:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "70",
+                                            "AboveLocalMSL": 80,
+                                            "AboveChartDatum": 192
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-24T16:06:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-65",
+                                            "AboveLocalMSL": -54,
+                                            "AboveChartDatum": 57
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-24T22:44:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "24",
+                                            "AboveLocalMSL": 34,
+                                            "AboveChartDatum": 147
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-21",
+                                "LunarDate": "2026-02-03",
+                                "TideRange": "\u5927",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-21T01:18:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-63",
+                                            "AboveLocalMSL": -52,
+                                            "AboveChartDatum": 60
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-21T07:29:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "82",
+                                            "AboveLocalMSL": 92,
+                                            "AboveChartDatum": 205
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-21T13:44:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-83",
+                                            "AboveLocalMSL": -72,
+                                            "AboveChartDatum": 39
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-21T20:05:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "72",
+                                            "AboveLocalMSL": 82,
+                                            "AboveChartDatum": 195
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-15",
+                                "LunarDate": "2026-01-27",
+                                "TideRange": "\u4e2d",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-15T05:01:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "34",
+                                            "AboveLocalMSL": 44,
+                                            "AboveChartDatum": 157
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-15T10:09:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-8",
+                                            "AboveLocalMSL": 2,
+                                            "AboveChartDatum": 114
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-15T16:01:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "51",
+                                            "AboveLocalMSL": 61,
+                                            "AboveChartDatum": 173
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-15T22:56:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-55",
+                                            "AboveLocalMSL": -44,
+                                            "AboveChartDatum": 67
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-30",
+                                "LunarDate": "2026-02-12",
+                                "TideRange": "\u4e2d",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-30T05:04:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "50",
+                                            "AboveLocalMSL": 60,
+                                            "AboveChartDatum": 172
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-30T10:44:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-34",
+                                            "AboveLocalMSL": -23,
+                                            "AboveChartDatum": 88
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-30T16:54:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "68",
+                                            "AboveLocalMSL": 78,
+                                            "AboveChartDatum": 191
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-30T23:13:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-63",
+                                            "AboveLocalMSL": -52,
+                                            "AboveChartDatum": 60
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-12",
+                                "LunarDate": "2026-01-24",
+                                "TideRange": "\u5c0f",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-12T10:59:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "36",
+                                            "AboveLocalMSL": 46,
+                                            "AboveChartDatum": 158
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-12T20:10:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-26",
+                                            "AboveLocalMSL": -15,
+                                            "AboveChartDatum": 96
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-17",
+                                "LunarDate": "2026-01-29",
+                                "TideRange": "\u4e2d",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-17T05:46:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "55",
+                                            "AboveLocalMSL": 65,
+                                            "AboveChartDatum": 177
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-17T11:21:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-37",
+                                            "AboveLocalMSL": -26,
+                                            "AboveChartDatum": 85
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-17T17:25:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "75",
+                                            "AboveLocalMSL": 85,
+                                            "AboveChartDatum": 197
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-17T23:53:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-69",
+                                            "AboveLocalMSL": -59,
+                                            "AboveChartDatum": 53
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-20",
+                                "LunarDate": "2026-02-02",
+                                "TideRange": "\u5927",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-20T00:49:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-69",
+                                            "AboveLocalMSL": -58,
+                                            "AboveChartDatum": 53
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-20T07:01:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "79",
+                                            "AboveLocalMSL": 89,
+                                            "AboveChartDatum": 201
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-20T13:05:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-77",
+                                            "AboveLocalMSL": -66,
+                                            "AboveChartDatum": 45
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-20T19:23:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "82",
+                                            "AboveLocalMSL": 92,
+                                            "AboveChartDatum": 204
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-25",
+                                "LunarDate": "2026-02-07",
+                                "TideRange": "\u4e2d",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-25T03:27:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-12",
+                                            "AboveLocalMSL": -1,
+                                            "AboveChartDatum": 110
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-25T09:53:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "58",
+                                            "AboveLocalMSL": 68,
+                                            "AboveChartDatum": 180
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-25T17:24:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-52",
+                                            "AboveLocalMSL": -41,
+                                            "AboveChartDatum": 70
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-08",
+                                "LunarDate": "2026-01-20",
+                                "TideRange": "\u4e2d",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-08T02:23:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-40",
+                                            "AboveLocalMSL": -29,
+                                            "AboveChartDatum": 83
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-08T08:31:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "67",
+                                            "AboveLocalMSL": 77,
+                                            "AboveChartDatum": 189
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-08T14:58:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-55",
+                                            "AboveLocalMSL": -44,
+                                            "AboveChartDatum": 67
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-08T21:18:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "39",
+                                            "AboveLocalMSL": 50,
+                                            "AboveChartDatum": 162
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-09",
+                                "LunarDate": "2026-01-21",
+                                "TideRange": "\u5c0f",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-09T02:46:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-29",
+                                            "AboveLocalMSL": -18,
+                                            "AboveChartDatum": 94
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-09T08:55:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "61",
+                                            "AboveLocalMSL": 71,
+                                            "AboveChartDatum": 183
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-09T15:35:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-47",
+                                            "AboveLocalMSL": -36,
+                                            "AboveChartDatum": 76
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-09T21:57:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "26",
+                                            "AboveLocalMSL": 36,
+                                            "AboveChartDatum": 148
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-26",
+                                "LunarDate": "2026-02-08",
+                                "TideRange": "\u5c0f",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-26T00:30:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "13",
+                                            "AboveLocalMSL": 23,
+                                            "AboveChartDatum": 136
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-26T04:23:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "1",
+                                            "AboveLocalMSL": 11,
+                                            "AboveChartDatum": 123
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-26T11:08:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "45",
+                                            "AboveLocalMSL": 55,
+                                            "AboveChartDatum": 168
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-26T19:19:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-46",
+                                            "AboveLocalMSL": -35,
+                                            "AboveChartDatum": 76
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-02",
+                                "LunarDate": "2026-01-14",
+                                "TideRange": "\u5927",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-02T06:08:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "53",
+                                            "AboveLocalMSL": 63,
+                                            "AboveChartDatum": 175
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-02T11:36:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-40",
+                                            "AboveLocalMSL": -29,
+                                            "AboveChartDatum": 83
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-02T17:48:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "83",
+                                            "AboveLocalMSL": 93,
+                                            "AboveChartDatum": 206
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-31",
+                                "LunarDate": "2026-02-13",
+                                "TideRange": "\u4e2d",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-31T05:30:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "59",
+                                            "AboveLocalMSL": 69,
+                                            "AboveChartDatum": 182
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-31T11:20:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-48",
+                                            "AboveLocalMSL": -37,
+                                            "AboveChartDatum": 74
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-31T17:36:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "74",
+                                            "AboveLocalMSL": 84,
+                                            "AboveChartDatum": 196
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-31T23:43:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-61",
+                                            "AboveLocalMSL": -50,
+                                            "AboveChartDatum": 62
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-22",
+                                "LunarDate": "2026-02-04",
+                                "TideRange": "\u5927",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-22T01:48:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-52",
+                                            "AboveLocalMSL": -41,
+                                            "AboveChartDatum": 70
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-22T07:59:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "82",
+                                            "AboveLocalMSL": 92,
+                                            "AboveChartDatum": 204
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-22T14:25:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-83",
+                                            "AboveLocalMSL": -72,
+                                            "AboveChartDatum": 39
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-22T20:49:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "58",
+                                            "AboveLocalMSL": 68,
+                                            "AboveChartDatum": 180
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-03",
+                                "LunarDate": "2026-01-15",
+                                "TideRange": "\u5927",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-03T00:15:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-83",
+                                            "AboveLocalMSL": -72,
+                                            "AboveChartDatum": 39
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-03T06:35:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "61",
+                                            "AboveLocalMSL": 71,
+                                            "AboveChartDatum": 183
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-03T12:12:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-51",
+                                            "AboveLocalMSL": -40,
+                                            "AboveChartDatum": 71
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-03T18:27:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "86",
+                                            "AboveLocalMSL": 96,
+                                            "AboveChartDatum": 208
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Date": "2026-03-13",
+                                "LunarDate": "2026-01-25",
+                                "TideRange": "\u5c0f",
+                                "Time": [
+                                    {
+                                        "DateTime": "2026-03-13T13:07:00+08:00",
+                                        "Tide": "\u6eff\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "31",
+                                            "AboveLocalMSL": 41,
+                                            "AboveChartDatum": 154
+                                        }
+                                    },
+                                    {
+                                        "DateTime": "2026-03-13T21:38:00+08:00",
+                                        "Tide": "\u4e7e\u6f6e",
+                                        "TideHeights": {
+                                            "AboveTWVD": "-35",
+                                            "AboveLocalMSL": -24,
+                                            "AboveChartDatum": 88
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}
