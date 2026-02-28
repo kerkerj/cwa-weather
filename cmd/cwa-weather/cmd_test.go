@@ -56,3 +56,30 @@ func TestCLI_ObserveHelp(t *testing.T) {
 	assert.Contains(t, string(out), "--city")
 	assert.Contains(t, string(out), "--station")
 }
+
+func TestCLI_OverviewHelp(t *testing.T) {
+	// Act
+	out, err := exec.Command("go", "run", ".", "overview", "--help").CombinedOutput()
+
+	// Assert
+	require.NoError(t, err)
+	assert.Contains(t, string(out), "--city")
+}
+
+func TestCLI_AlertHelp(t *testing.T) {
+	// Act
+	out, err := exec.Command("go", "run", ".", "alert", "--help").CombinedOutput()
+
+	// Assert
+	require.NoError(t, err)
+	assert.Contains(t, string(out), "--city")
+}
+
+func TestCLI_TyphoonHelp(t *testing.T) {
+	// Act
+	out, err := exec.Command("go", "run", ".", "typhoon", "--help").CombinedOutput()
+
+	// Assert
+	require.NoError(t, err)
+	assert.Contains(t, string(out), "--td-no")
+}
