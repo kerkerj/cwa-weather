@@ -1,4 +1,4 @@
-.PHONY: build test lint clean
+.PHONY: build test lint sec check clean
 
 build:
 	go build -o bin/cwa-weather ./cmd/cwa-weather
@@ -8,6 +8,11 @@ test:
 
 lint:
 	golangci-lint run ./...
+
+sec:
+	gosec ./...
+
+check: test lint sec
 
 clean:
 	rm -rf bin/
