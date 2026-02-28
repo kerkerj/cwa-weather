@@ -1,4 +1,4 @@
-package cwa
+package cwa_test
 
 import (
 	"context"
@@ -7,34 +7,25 @@ import (
 	"os"
 	"testing"
 
+	"github.com/kerkerj/cwa-weather/cwa"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
 
 func TestNewClient(t *testing.T) {
-	// Arrange
-	apiKey := "test-api-key"
-
-	// Act
-	c := NewClient(apiKey)
+	// Arrange & Act
+	c := cwa.NewClient("test-api-key")
 
 	// Assert
 	assert.NotNil(t, c)
-	assert.Equal(t, apiKey, c.apiKey)
-	assert.NotEmpty(t, c.baseURL)
-	assert.NotNil(t, c.httpClient)
 }
 
 func TestNewClient_EmptyKey(t *testing.T) {
-	// Arrange
-	apiKey := ""
-
-	// Act
-	c := NewClient(apiKey)
+	// Arrange & Act
+	c := cwa.NewClient("")
 
 	// Assert
 	assert.NotNil(t, c)
-	assert.Equal(t, "", c.apiKey)
 }
 
 func TestQuery_Forecast(t *testing.T) {
@@ -45,7 +36,7 @@ func TestQuery_Forecast(t *testing.T) {
 	server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		// Verify request path and params
 		assert.Equal(t, "/F-D0047-069", r.URL.Path)
-		assert.Equal(t, "test-key", r.URL.Query().Get("Authorization"))
+		assert.Equal(t, "test-key", r.Header.Get("Authorization"))
 		assert.Equal(t, "JSON", r.URL.Query().Get("format"))
 		assert.Equal(t, "板橋區", r.URL.Query().Get("LocationName"))
 
@@ -55,7 +46,7 @@ func TestQuery_Forecast(t *testing.T) {
 	}))
 	defer server.Close()
 
-	c := NewClient("test-key")
+	c := cwa.NewClient("test-key")
 	c.SetBaseURL(server.URL)
 
 	// Act
@@ -80,7 +71,7 @@ func TestQuery_InvalidAPIKey(t *testing.T) {
 	}))
 	defer server.Close()
 
-	c := NewClient("bad-key")
+	c := cwa.NewClient("bad-key")
 	c.SetBaseURL(server.URL)
 
 	// Act
@@ -99,7 +90,7 @@ func TestQuery_HTTPError(t *testing.T) {
 	}))
 	defer server.Close()
 
-	c := NewClient("test-key")
+	c := cwa.NewClient("test-key")
 	c.SetBaseURL(server.URL)
 
 	// Act

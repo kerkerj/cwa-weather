@@ -65,6 +65,8 @@ func (c *Client) Query(ctx context.Context, dataID string, params map[string]str
 		return nil, fmt.Errorf("failed to create request: %w", err)
 	}
 
+	req.Header.Set("Authorization", c.apiKey)
+
 	resp, err := c.httpClient.Do(req)
 	if err != nil {
 		return nil, fmt.Errorf("failed to execute request: %w", err)
@@ -90,7 +92,6 @@ func (c *Client) buildURL(dataID string, params map[string]string) (string, erro
 	}
 
 	q := u.Query()
-	q.Set("Authorization", c.apiKey)
 	q.Set("format", "JSON")
 
 	for k, v := range params {

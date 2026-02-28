@@ -19,7 +19,7 @@ func init() {
 	}
 }
 
-// cityDatasets maps city name to 3-hour forecast dataset ID.
+// cityDatasets maps city name to 3-day forecast dataset ID.
 var cityDatasets = map[string]string{
 	"宜蘭縣": "F-D0047-001",
 	"桃園市": "F-D0047-005",
