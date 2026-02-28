@@ -23,7 +23,7 @@ func TestObserve_ByCity(t *testing.T) {
 
 		w.Header().Set("Content-Type", "application/json")
 		w.WriteHeader(http.StatusOK)
-		w.Write(fixture)
+		_, _ = w.Write(fixture)
 	}))
 	defer server.Close()
 
@@ -46,7 +46,7 @@ func TestObserve_ByStation(t *testing.T) {
 
 		w.Header().Set("Content-Type", "application/json")
 		w.WriteHeader(http.StatusOK)
-		w.Write([]byte(`{"success":"true","result":{"resource_id":"O-A0003-001","fields":[]},"records":{}}`))
+		_, _ = w.Write([]byte(`{"success":"true","result":{"resource_id":"O-A0003-001","fields":[]},"records":{}}`))
 	}))
 	defer server.Close()
 
@@ -81,7 +81,7 @@ func TestObserve_CityAlias(t *testing.T) {
 
 		w.Header().Set("Content-Type", "application/json")
 		w.WriteHeader(http.StatusOK)
-		w.Write([]byte(`{"success":"true","result":{"resource_id":"O-A0003-001","fields":[]},"records":{}}`))
+		_, _ = w.Write([]byte(`{"success":"true","result":{"resource_id":"O-A0003-001","fields":[]},"records":{}}`))
 	}))
 	defer server.Close()
 

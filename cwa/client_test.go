@@ -42,7 +42,7 @@ func TestQuery_Forecast(t *testing.T) {
 
 		w.Header().Set("Content-Type", "application/json")
 		w.WriteHeader(http.StatusOK)
-		w.Write(fixture)
+		_, _ = w.Write(fixture)
 	}))
 	defer server.Close()
 
@@ -67,7 +67,7 @@ func TestQuery_InvalidAPIKey(t *testing.T) {
 	server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "application/json")
 		w.WriteHeader(http.StatusOK)
-		w.Write([]byte(`{"success":"false","result":{"resource_id":"","fields":[]},"records":{}}`))
+		_, _ = w.Write([]byte(`{"success":"false","result":{"resource_id":"","fields":[]},"records":{}}`))
 	}))
 	defer server.Close()
 
@@ -86,7 +86,7 @@ func TestQuery_HTTPError(t *testing.T) {
 	// Arrange
 	server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusInternalServerError)
-		w.Write([]byte("internal server error"))
+		_, _ = w.Write([]byte("internal server error"))
 	}))
 	defer server.Close()
 

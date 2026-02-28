@@ -23,7 +23,7 @@ func TestForecast(t *testing.T) {
 
 		w.Header().Set("Content-Type", "application/json")
 		w.WriteHeader(http.StatusOK)
-		w.Write(fixture)
+		_, _ = w.Write(fixture)
 	}))
 	defer server.Close()
 
@@ -45,7 +45,7 @@ func TestForecast_CityAlias(t *testing.T) {
 
 		w.Header().Set("Content-Type", "application/json")
 		w.WriteHeader(http.StatusOK)
-		w.Write([]byte(`{"success":"true","result":{"resource_id":"F-D0047-061","fields":[]},"records":{}}`))
+		_, _ = w.Write([]byte(`{"success":"true","result":{"resource_id":"F-D0047-061","fields":[]},"records":{}}`))
 	}))
 	defer server.Close()
 
