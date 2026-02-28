@@ -33,6 +33,31 @@ description: Query Taiwan weather data (forecast, observations) via CWA Open Dat
 **Observe filter flags:**
 - `--element` — filter weather elements (comma-separated, valid: Weather, VisibilityDescription, SunshineDuration, Now, WindDirection, WindSpeed, AirTemperature, RelativeHumidity, AirPressure, UVIndex, Max10MinAverage, GustInfo, DailyHigh, DailyLow)
 
+### 36-hour City-level Forecast (Overview)
+`cwa-weather overview --city "城市"`
+`cwa-weather overview --city "城市" --element "Wx,PoP"`
+`cwa-weather overview --city "城市" --time-from "2026-03-01T06:00:00" --time-to "2026-03-01T18:00:00"`
+
+**Overview filter flags:**
+- `--element` — filter weather elements (comma-separated, e.g. Wx,PoP,MinT,MaxT)
+- `--time-from` — start time (yyyy-MM-ddThh:mm:ss)
+- `--time-to` — end time (yyyy-MM-ddThh:mm:ss)
+
+### Weather Alerts
+`cwa-weather alert`
+`cwa-weather alert --city "城市"`
+
+**Alert filter flags:**
+- `--city` — filter alerts by city name
+
+### Typhoon Tracking
+`cwa-weather typhoon`
+`cwa-weather typhoon --td-no "03" --dataset "ForecastData"`
+
+**Typhoon filter flags:**
+- `--td-no` — tropical depression number
+- `--dataset` — dataset type (e.g. ForecastData)
+
 ### Generic Query (any CWA endpoint)
 `cwa-weather query DATAID -p key=value`
 

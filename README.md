@@ -54,6 +54,39 @@ cwa-weather observe --station 淡水
 cwa-weather observe --city 新北市 --element AirTemperature,Weather
 ```
 
+### 36-hour City-level Forecast (Overview)
+
+```bash
+# City-level 36-hour forecast
+cwa-weather overview --city 臺北市
+
+# Filter by weather elements
+cwa-weather overview --city 臺北市 --element Wx,PoP
+
+# Filter by time range
+cwa-weather overview --city 臺北市 --time-from 2026-03-01T06:00:00 --time-to 2026-03-01T18:00:00
+```
+
+### Weather Alerts
+
+```bash
+# All active alerts
+cwa-weather alert
+
+# Alerts for a specific city
+cwa-weather alert --city 臺北市
+```
+
+### Typhoon Tracking
+
+```bash
+# Current tropical cyclone info
+cwa-weather typhoon
+
+# Filter by tropical depression number and dataset
+cwa-weather typhoon --td-no 03 --dataset ForecastData
+```
+
 ### Generic Query
 
 ```bash
