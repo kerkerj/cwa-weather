@@ -11,8 +11,11 @@ import (
 )
 
 var (
-	forecastCity string
-	forecastTown string
+	forecastCity    string
+	forecastTown    string
+	forecastElement string
+	forecastFrom    string
+	forecastTo      string
 )
 
 var forecastCmd = &cobra.Command{
@@ -26,7 +29,17 @@ var forecastCmd = &cobra.Command{
 		}
 
 		client := cwa.NewClient(apiKey)
-		resp, err := client.Forecast(context.Background(), forecastCity, forecastTown)
+
+		var opts []cwa.ForecastOption
+		if forecastElement != "" || forecastFrom != "" || forecastTo != "" {
+			opts = append(opts, cwa.ForecastOption{
+				Element:  forecastElement,
+				TimeFrom: forecastFrom,
+				TimeTo:   forecastTo,
+			})
+		}
+
+		resp, err := client.Forecast(context.Background(), forecastCity, forecastTown, opts...)
 		if err != nil {
 			return fmt.Errorf("failed to get forecast: %w", err)
 		}
@@ -41,6 +54,9 @@ var forecastCmd = &cobra.Command{
 func init() {
 	forecastCmd.Flags().StringVar(&forecastCity, "city", "", "city name (required)")
 	forecastCmd.Flags().StringVar(&forecastTown, "town", "", "town name (optional)")
+	forecastCmd.Flags().StringVar(&forecastElement, "element", "", "filter weather elements (comma-separated, e.g. 溫度,天氣現象)")
+	forecastCmd.Flags().StringVar(&forecastFrom, "time-from", "", "start time filter (yyyy-MM-ddThh:mm:ss)")
+	forecastCmd.Flags().StringVar(&forecastTo, "time-to", "", "end time filter (yyyy-MM-ddThh:mm:ss)")
 	_ = forecastCmd.MarkFlagRequired("city")
 	rootCmd.AddCommand(forecastCmd)
 }

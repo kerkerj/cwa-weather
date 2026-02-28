@@ -24,14 +24,28 @@ func ObserveByStation(station string) ObserveOption {
 	}
 }
 
+// ObserveWithElement filters by weather element names (comma-separated).
+func ObserveWithElement(element string) ObserveOption {
+	return func(params map[string]string) {
+		params["WeatherElement"] = element
+	}
+}
+
 // Observe returns real-time observation data.
-func (c *Client) Observe(ctx context.Context, opt ObserveOption) (*Response, error) {
-	if opt == nil {
-		return nil, fmt.Errorf("observe requires either city or station option")
+func (c *Client) Observe(ctx context.Context, opts ...ObserveOption) (*Response, error) {
+	if len(opts) == 0 {
+		return nil, fmt.Errorf("observe requires at least one option (city or station)")
 	}
 
 	params := make(map[string]string)
-	opt(params)
+	for _, opt := range opts {
+		opt(params)
+	}
+
+	// Must have either CountyName or StationName
+	if params["CountyName"] == "" && params["StationName"] == "" {
+		return nil, fmt.Errorf("observe requires either city or station option")
+	}
 
 	return c.Query(ctx, observeDatasetID, params)
 }

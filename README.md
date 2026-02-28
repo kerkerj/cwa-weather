@@ -30,6 +30,15 @@ cwa-weather forecast --city 臺北市 --town 中正區
 
 # City-level forecast (all towns)
 cwa-weather forecast --city 台北市    # 台→臺 auto-converted
+
+# Filter by weather elements
+cwa-weather forecast --city 新北市 --town 板橋區 --element 溫度,天氣現象
+
+# Filter by time range
+cwa-weather forecast --city 臺北市 --time-from 2026-03-01T06:00:00
+
+# Combine element and time filters
+cwa-weather forecast --city 臺北市 --element 降雨機率 --time-from 2026-03-01T06:00:00 --time-to 2026-03-01T18:00:00
 ```
 
 ### Real-time Observation
@@ -40,6 +49,9 @@ cwa-weather observe --city 新北市
 
 # By station name
 cwa-weather observe --station 淡水
+
+# Filter by weather elements
+cwa-weather observe --city 新北市 --element AirTemperature,Weather
 ```
 
 ### Generic Query
@@ -79,9 +91,20 @@ func main() {
 	forecast, _ := client.Forecast(ctx, "臺北市", "中正區")
 	fmt.Println(forecast)
 
+	// Forecast with element and time filters
+	filtered, _ := client.Forecast(ctx, "臺北市", "", cwa.ForecastOption{
+		Element:  "溫度,天氣現象",
+		TimeFrom: "2026-03-01T06:00:00",
+	})
+	fmt.Println(filtered)
+
 	// Observation
 	obs, _ := client.Observe(ctx, cwa.ObserveByCity("新北市"))
 	fmt.Println(obs)
+
+	// Observation with element filter
+	obsFiltered, _ := client.Observe(ctx, cwa.ObserveByCity("新北市"), cwa.ObserveWithElement("AirTemperature"))
+	fmt.Println(obsFiltered)
 }
 ```
 

@@ -13,6 +13,7 @@ import (
 var (
 	observeCity    string
 	observeStation string
+	observeElement string
 )
 
 var observeCmd = &cobra.Command{
@@ -32,15 +33,18 @@ var observeCmd = &cobra.Command{
 			return fmt.Errorf("CWA_API_KEY environment variable is required")
 		}
 
-		var opt cwa.ObserveOption
+		var opts []cwa.ObserveOption
 		if observeCity != "" {
-			opt = cwa.ObserveByCity(observeCity)
+			opts = append(opts, cwa.ObserveByCity(observeCity))
 		} else {
-			opt = cwa.ObserveByStation(observeStation)
+			opts = append(opts, cwa.ObserveByStation(observeStation))
+		}
+		if observeElement != "" {
+			opts = append(opts, cwa.ObserveWithElement(observeElement))
 		}
 
 		client := cwa.NewClient(apiKey)
-		resp, err := client.Observe(context.Background(), opt)
+		resp, err := client.Observe(context.Background(), opts...)
 		if err != nil {
 			return fmt.Errorf("failed to get observation: %w", err)
 		}
@@ -55,5 +59,6 @@ var observeCmd = &cobra.Command{
 func init() {
 	observeCmd.Flags().StringVar(&observeCity, "city", "", "city name")
 	observeCmd.Flags().StringVar(&observeStation, "station", "", "station name")
+	observeCmd.Flags().StringVar(&observeElement, "element", "", "filter weather elements (comma-separated, e.g. AirTemperature,Weather)")
 	rootCmd.AddCommand(observeCmd)
 }

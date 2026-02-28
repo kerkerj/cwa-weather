@@ -72,3 +72,53 @@ func TestForecast_UnknownCity(t *testing.T) {
 	assert.Nil(t, resp)
 	assert.Contains(t, err.Error(), "city not found")
 }
+
+func TestForecast_WithElement(t *testing.T) {
+	// Arrange
+	server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		assert.Equal(t, "溫度,天氣現象", r.URL.Query().Get("ElementName"))
+
+		w.Header().Set("Content-Type", "application/json")
+		w.WriteHeader(http.StatusOK)
+		_, _ = w.Write([]byte(`{"success":"true","result":{"resource_id":"F-D0047-069","fields":[]},"records":{}}`))
+	}))
+	defer server.Close()
+
+	c := cwa.NewClient("test-key")
+	c.SetBaseURL(server.URL)
+
+	// Act
+	resp, err := c.Forecast(context.Background(), "新北市", "", cwa.ForecastOption{
+		Element: "溫度,天氣現象",
+	})
+
+	// Assert
+	require.NoError(t, err)
+	assert.Equal(t, "true", resp.Success)
+}
+
+func TestForecast_WithTimeRange(t *testing.T) {
+	// Arrange
+	server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		assert.Equal(t, "2026-03-01T06:00:00", r.URL.Query().Get("timeFrom"))
+		assert.Equal(t, "2026-03-01T18:00:00", r.URL.Query().Get("timeTo"))
+
+		w.Header().Set("Content-Type", "application/json")
+		w.WriteHeader(http.StatusOK)
+		_, _ = w.Write([]byte(`{"success":"true","result":{"resource_id":"F-D0047-061","fields":[]},"records":{}}`))
+	}))
+	defer server.Close()
+
+	c := cwa.NewClient("test-key")
+	c.SetBaseURL(server.URL)
+
+	// Act
+	resp, err := c.Forecast(context.Background(), "臺北市", "", cwa.ForecastOption{
+		TimeFrom: "2026-03-01T06:00:00",
+		TimeTo:   "2026-03-01T18:00:00",
+	})
+
+	// Assert
+	require.NoError(t, err)
+	assert.Equal(t, "true", resp.Success)
+}
