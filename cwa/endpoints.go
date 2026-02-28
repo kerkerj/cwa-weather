@@ -1,10 +1,23 @@
 package cwa
 
 import (
+	_ "embed"
+	"encoding/json"
 	"fmt"
 	"sort"
 	"strings"
 )
+
+//go:embed towns.json
+var townsJSON []byte
+
+var townsByCity map[string][]string
+
+func init() {
+	if err := json.Unmarshal(townsJSON, &townsByCity); err != nil {
+		panic(fmt.Sprintf("failed to parse embedded towns.json: %v", err))
+	}
+}
 
 // cityDatasets maps city name to 3-hour forecast dataset ID.
 var cityDatasets = map[string]string{
@@ -48,6 +61,18 @@ func GetDatasetID(city string) (string, error) {
 	}
 
 	return id, nil
+}
+
+// Towns returns all town names for a city.
+func Towns(city string) ([]string, error) {
+	city = NormalizeCity(city)
+
+	towns, ok := townsByCity[city]
+	if !ok {
+		return nil, fmt.Errorf("city not found: %s", city)
+	}
+
+	return towns, nil
 }
 
 // Cities returns a sorted list of all 22 supported city names.

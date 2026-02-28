@@ -70,6 +70,33 @@ func TestGetDatasetID(t *testing.T) {
 	}
 }
 
+func TestTowns(t *testing.T) {
+	// Act
+	towns, err := cwa.Towns("臺北市")
+
+	// Assert
+	assert.NoError(t, err)
+	assert.Contains(t, towns, "中正區")
+	assert.Contains(t, towns, "大安區")
+}
+
+func TestTowns_WithAlias(t *testing.T) {
+	// Act
+	towns, err := cwa.Towns("台北市")
+
+	// Assert
+	assert.NoError(t, err)
+	assert.NotEmpty(t, towns)
+}
+
+func TestTowns_UnknownCity(t *testing.T) {
+	// Act
+	_, err := cwa.Towns("不存在市")
+
+	// Assert
+	assert.Error(t, err)
+}
+
 func TestCities(t *testing.T) {
 	// Arrange
 	// (no setup needed)
