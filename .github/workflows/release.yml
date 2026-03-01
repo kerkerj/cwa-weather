@@ -47,4 +47,4 @@ jobs:
     with:
       base64-subjects: "${{ needs.goreleaser.outputs.hashes }}"
       upload-assets: true
-      private-repository: true
+      private-repository: true # TODO: remove when repo goes public
