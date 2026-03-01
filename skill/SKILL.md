@@ -1,6 +1,7 @@
 ---
 name: cwa-weather
 description: Use when user asks about Taiwan weather, forecast, observation, typhoon, alerts, or marine data. Requires cwa-weather CLI and CWA_API_KEY env var.
+license: MIT
 ---
 
 # cwa-weather
