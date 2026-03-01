@@ -554,18 +554,18 @@ func TestPrintForecastSummary_GroupsByDate(t *testing.T) {
 	// Three entries on the same day — should be grouped under one date header
 	times := []cwa.ForecastTime{
 		{
-			StartTime: "2026-03-01T00:00:00+08:00",
-			EndTime:   "2026-03-01T06:00:00+08:00",
+			StartTime:    "2026-03-01T00:00:00+08:00",
+			EndTime:      "2026-03-01T06:00:00+08:00",
 			ElementValue: []map[string]string{{"Temperature": "18"}},
 		},
 		{
-			StartTime: "2026-03-01T06:00:00+08:00",
-			EndTime:   "2026-03-01T12:00:00+08:00",
+			StartTime:    "2026-03-01T06:00:00+08:00",
+			EndTime:      "2026-03-01T12:00:00+08:00",
 			ElementValue: []map[string]string{{"Temperature": "23"}},
 		},
 		{
-			StartTime: "2026-03-01T12:00:00+08:00",
-			EndTime:   "2026-03-01T18:00:00+08:00",
+			StartTime:    "2026-03-01T12:00:00+08:00",
+			EndTime:      "2026-03-01T18:00:00+08:00",
 			ElementValue: []map[string]string{{"Temperature": "25"}},
 		},
 	}
