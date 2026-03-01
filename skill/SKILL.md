@@ -58,6 +58,13 @@ description: Query Taiwan weather data (forecast, observations) via CWA Open Dat
 - `--td-no` — tropical depression number
 - `--dataset` — dataset type (e.g. ForecastData)
 
+### Marine Observation (海象)
+`cwa-weather sea`
+`cwa-weather sea --station "站名"`
+
+**Sea filter flags:**
+- `--station` — filter by station name
+
 ### Generic Query (any CWA endpoint)
 `cwa-weather query DATAID -p key=value`
 

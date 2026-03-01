@@ -565,7 +565,7 @@ func main() {
 
 **Step 2: Run the script to generate towns.json**
 
-Run: `CWA_API_KEY=REDACTED_API_KEY go run cwa/gen/fetch_towns.go`
+Run: `CWA_API_KEY=$CWA_API_KEY go run cwa/gen/fetch_towns.go`
 Expected: `towns.json` created with 22 cities and their towns
 
 Note: F-D0047-089 is the "全臺灣未來3天" endpoint. If it bundles all cities in one response, one call gets all towns. If not, we may need to iterate per city — verify from the response.

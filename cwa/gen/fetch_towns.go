@@ -73,11 +73,18 @@ func main() {
 
 	for _, city := range cities {
 		datasetID := cityDatasets[city]
-		url := fmt.Sprintf("%s%s?Authorization=%s&format=JSON&elementName=T", baseURL, datasetID, apiKey)
+		reqURL := fmt.Sprintf("%s%s?format=JSON&elementName=T", baseURL, datasetID)
 
 		fmt.Printf("Fetching %s (%s)...\n", city, datasetID)
 
-		resp, err := http.Get(url)
+		req, err := http.NewRequest(http.MethodGet, reqURL, nil)
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "failed to create request for %s: %v\n", city, err)
+			os.Exit(1)
+		}
+		req.Header.Set("Authorization", apiKey)
+
+		resp, err := http.DefaultClient.Do(req)
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "failed to fetch %s: %v\n", city, err)
 			os.Exit(1)

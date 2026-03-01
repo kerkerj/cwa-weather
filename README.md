@@ -87,6 +87,16 @@ cwa-weather typhoon
 cwa-weather typhoon --td-no 03 --dataset ForecastData
 ```
 
+### Marine Observation (海象)
+
+```bash
+# All marine stations
+cwa-weather sea
+
+# Specific station
+cwa-weather sea --station 富貴角
+```
+
 ### Generic Query
 
 ```bash

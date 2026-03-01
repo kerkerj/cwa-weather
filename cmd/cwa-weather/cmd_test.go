@@ -83,3 +83,12 @@ func TestCLI_TyphoonHelp(t *testing.T) {
 	require.NoError(t, err)
 	assert.Contains(t, string(out), "--td-no")
 }
+
+func TestCLI_SeaHelp(t *testing.T) {
+	// Act
+	out, err := exec.Command("go", "run", ".", "sea", "--help").CombinedOutput()
+
+	// Assert
+	require.NoError(t, err)
+	assert.Contains(t, string(out), "--station")
+}
