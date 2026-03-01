@@ -182,7 +182,7 @@ Once installed, ask Claude things like:
 
 ### Other AI Agents
 
-Point your agent to the skill files in [`skill/`](skill/) for command reference and usage instructions.
+Point your agent to the skill files in [`plugins/cwa-weather/skills/`](plugins/cwa-weather/skills/) for command reference and usage instructions.
 
 ## Notes
 

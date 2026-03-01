@@ -182,7 +182,7 @@ func main() {
 
 ### 其他 AI Agent
 
-將 agent 指向 [`skill/`](skill/) 目錄中的 skill 檔案，即可取得指令參考與使用說明。
+將 agent 指向 [`plugins/cwa-weather/skills/`](plugins/cwa-weather/skills/) 目錄中的 skill 檔案，即可取得指令參考與使用說明。
 
 ## 備註
 
