@@ -59,6 +59,6 @@ var observeCmd = &cobra.Command{
 func init() {
 	observeCmd.Flags().StringVar(&observeCity, "city", "", "city name")
 	observeCmd.Flags().StringVar(&observeStation, "station", "", "station name")
-	observeCmd.Flags().StringVar(&observeElement, "element", "", "filter weather elements (comma-separated, e.g. AirTemperature,Weather)")
+	observeCmd.Flags().StringVar(&observeElement, "element", "", "filter weather elements (comma-separated, e.g. AirTemperature,Weather). Run without this flag to see all available names")
 	rootCmd.AddCommand(observeCmd)
 }

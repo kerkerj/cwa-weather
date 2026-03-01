@@ -46,6 +46,8 @@ cwa-weather forecast --city 臺北市 --time-from 2026-03-01T06:00:00
 cwa-weather forecast --city 臺北市 --element 降雨機率 --time-from 2026-03-01T06:00:00 --time-to 2026-03-01T18:00:00
 ```
 
+> **Tip**: Element names are defined by CWA API — run a command without `--element` to see all available names in the JSON response.
+
 ### Real-time Observation
 
 ```bash

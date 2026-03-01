@@ -52,7 +52,7 @@ var overviewCmd = &cobra.Command{
 
 func init() {
 	overviewCmd.Flags().StringVar(&overviewCity, "city", "", "city name (optional, omit for all cities)")
-	overviewCmd.Flags().StringVar(&overviewElement, "element", "", "filter weather elements (comma-separated, e.g. Wx,PoP,CI,MinT,MaxT)")
+	overviewCmd.Flags().StringVar(&overviewElement, "element", "", "filter weather elements (comma-separated, e.g. Wx,PoP,CI,MinT,MaxT). Run without this flag to see all available names")
 	overviewCmd.Flags().StringVar(&overviewFrom, "time-from", "", "start time filter (yyyy-MM-ddThh:mm:ss)")
 	overviewCmd.Flags().StringVar(&overviewTo, "time-to", "", "end time filter (yyyy-MM-ddThh:mm:ss)")
 	rootCmd.AddCommand(overviewCmd)

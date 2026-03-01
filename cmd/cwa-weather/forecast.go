@@ -54,7 +54,7 @@ var forecastCmd = &cobra.Command{
 func init() {
 	forecastCmd.Flags().StringVar(&forecastCity, "city", "", "city name (required)")
 	forecastCmd.Flags().StringVar(&forecastTown, "town", "", "town name (optional)")
-	forecastCmd.Flags().StringVar(&forecastElement, "element", "", "filter weather elements (comma-separated, e.g. 溫度,天氣現象)")
+	forecastCmd.Flags().StringVar(&forecastElement, "element", "", "filter weather elements (comma-separated, e.g. 溫度,天氣現象). Run without this flag to see all available names")
 	forecastCmd.Flags().StringVar(&forecastFrom, "time-from", "", "start time filter (yyyy-MM-ddThh:mm:ss)")
 	forecastCmd.Flags().StringVar(&forecastTo, "time-to", "", "end time filter (yyyy-MM-ddThh:mm:ss)")
 	_ = forecastCmd.MarkFlagRequired("city")
