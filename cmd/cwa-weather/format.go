@@ -17,6 +17,14 @@ func printJSON(v any) error {
 	return enc.Encode(v)
 }
 
+// dash replaces CWA's "-99" missing-data sentinel with "-".
+func dash(s string) string {
+	if s == "-99" || s == "-99.0" {
+		return "-"
+	}
+	return s
+}
+
 func printHeader(title string) {
 	fmt.Println(title)
 }

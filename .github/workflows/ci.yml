@@ -8,7 +8,7 @@ on:
       - go.sum
       - .github/workflows/ci.yml
       - .golangci.yml
-      - skill/**
+      - plugins/**
   pull_request:
     paths:
       - "**.go"
@@ -16,7 +16,7 @@ on:
       - go.sum
       - .github/workflows/ci.yml
       - .golangci.yml
-      - skill/**
+      - plugins/**
 
 jobs:
   test:
@@ -85,4 +85,4 @@ jobs:
       - if: steps.filter.outputs.skill == 'true'
         run: pip install skill-scanner
       - if: steps.filter.outputs.skill == 'true'
-        run: skill-scanner scan plugins/cwa-weather/
+        run: skill-scanner scan plugins/cwa-weather/skills/cwa-weather/

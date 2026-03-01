@@ -61,9 +61,9 @@ var observeCmd = &cobra.Command{
 				stn.StationName, stn.GeoInfo.TownName, stn.GeoInfo.CountyName,
 				stn.ObsTime.DateTime))
 			we := stn.WeatherElement
-			fmt.Printf("  天氣: %s    氣溫: %s°C    濕度: %s%%\n", we.Weather, we.AirTemperature, we.RelativeHumidity)
-			fmt.Printf("  風速: %s m/s    風向: %s°    氣壓: %s hPa\n", we.WindSpeed, we.WindDirection, we.AirPressure)
-			fmt.Printf("  今日降雨: %s mm    紫外線: %s\n", we.Now.Precipitation, we.UVIndex)
+			fmt.Printf("  天氣: %s    氣溫: %s°C    濕度: %s%%\n", dash(we.Weather), dash(we.AirTemperature), dash(we.RelativeHumidity))
+			fmt.Printf("  風速: %s m/s    風向: %s°    氣壓: %s hPa\n", dash(we.WindSpeed), dash(we.WindDirection), dash(we.AirPressure))
+			fmt.Printf("  今日降雨: %s mm    紫外線: %s\n", dash(we.Now.Precipitation), dash(we.UVIndex))
 			fmt.Println()
 		}
 		return nil
