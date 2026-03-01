@@ -77,7 +77,7 @@ jobs:
         with:
           filters: |
             skill:
-              - "skill/**"
+              - "plugins/**"
       - if: steps.filter.outputs.skill == 'true'
         uses: actions/setup-python@v5
         with:
@@ -85,4 +85,4 @@ jobs:
       - if: steps.filter.outputs.skill == 'true'
         run: pip install skill-scanner
       - if: steps.filter.outputs.skill == 'true'
-        run: skill-scanner scan skill/
+        run: skill-scanner scan plugins/cwa-weather/
