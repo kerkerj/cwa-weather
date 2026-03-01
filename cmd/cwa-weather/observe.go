@@ -56,7 +56,12 @@ var observeCmd = &cobra.Command{
 			return err
 		}
 
+		filterCity := cwa.NormalizeCity(observeCity)
+
 		for _, stn := range rec.Station {
+			if filterCity != "" && stn.GeoInfo.CountyName != filterCity {
+				continue
+			}
 			printHeader(fmt.Sprintf("%s（%s, %s）  %s",
 				stn.StationName, stn.GeoInfo.TownName, stn.GeoInfo.CountyName,
 				stn.ObsTime.DateTime))
