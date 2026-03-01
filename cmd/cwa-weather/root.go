@@ -7,7 +7,22 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var version = "dev"
+var (
+	version    = "dev"
+	jsonOutput bool
+)
+
+func init() {
+	rootCmd.PersistentFlags().BoolVar(&jsonOutput, "json", false, "output raw JSON instead of human-readable text")
+}
+
+func getAPIKey() (string, error) {
+	key := os.Getenv("CWA_API_KEY")
+	if key == "" {
+		return "", fmt.Errorf("CWA_API_KEY environment variable is not set — get a free key at https://opendata.cwa.gov.tw/userLogin")
+	}
+	return key, nil
+}
 
 var rootCmd = &cobra.Command{
 	Use:     "cwa-weather",

@@ -1,6 +1,7 @@
 package main
 
 import (
+	"os"
 	"os/exec"
 	"testing"
 
@@ -91,4 +92,28 @@ func TestCLI_SeaHelp(t *testing.T) {
 	// Assert
 	require.NoError(t, err)
 	assert.Contains(t, string(out), "--station")
+}
+
+func TestCLI_Cities_TextOutput(t *testing.T) {
+	// Arrange + Act
+	out, err := exec.Command("go", "run", ".", "cities").CombinedOutput()
+
+	// Assert
+	require.NoError(t, err)
+	assert.Contains(t, string(out), "臺北市")
+	assert.NotContains(t, string(out), "[") // not JSON
+}
+
+func TestCLI_NoAPIKey(t *testing.T) {
+	// Arrange
+	cmd := exec.Command("go", "run", ".", "forecast", "--city", "臺北市")
+	cmd.Env = append(os.Environ(), "CWA_API_KEY=")
+
+	// Act
+	out, err := cmd.CombinedOutput()
+
+	// Assert
+	assert.Error(t, err)
+	assert.Contains(t, string(out), "CWA_API_KEY")
+	assert.Contains(t, string(out), "opendata.cwa.gov.tw")
 }

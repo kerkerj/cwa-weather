@@ -43,4 +43,4 @@ echo 'make check' > .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
 2. Create `cwa/{name}_test.go` with httptest + fixture
 3. Create `cmd/cwa-weather/{name}.go` with cobra command + `init()` registering to `rootCmd`
 4. Add E2E help test in `cmd/cwa-weather/cmd_test.go`
-5. Update `README.md`, `skill/SKILL.md`, `skill/AGENT.md`
+5. Update `README.md`, `README.zh-TW.md`, `plugins/cwa-weather/skills/cwa-weather/SKILL.md`, `plugins/cwa-weather/agents/AGENT.md`

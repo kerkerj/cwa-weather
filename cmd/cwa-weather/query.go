@@ -2,9 +2,7 @@ package main
 
 import (
 	"context"
-	"encoding/json"
 	"fmt"
-	"os"
 	"strings"
 
 	"github.com/kerkerj/cwa-weather/cwa"
@@ -19,9 +17,9 @@ var queryCmd = &cobra.Command{
 	Long:  "Send a generic query to the CWA Open Data API for the specified dataset ID.",
 	Args:  cobra.ExactArgs(1),
 	RunE: func(cmd *cobra.Command, args []string) error {
-		apiKey := os.Getenv("CWA_API_KEY")
-		if apiKey == "" {
-			return fmt.Errorf("CWA_API_KEY environment variable is required")
+		apiKey, err := getAPIKey()
+		if err != nil {
+			return err
 		}
 
 		dataID := args[0]
@@ -41,10 +39,7 @@ var queryCmd = &cobra.Command{
 			return fmt.Errorf("failed to query: %w", err)
 		}
 
-		enc := json.NewEncoder(os.Stdout)
-		enc.SetIndent("", "  ")
-
-		return enc.Encode(resp)
+		return printJSON(resp)
 	},
 }
 

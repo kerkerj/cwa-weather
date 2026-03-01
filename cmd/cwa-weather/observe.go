@@ -2,9 +2,7 @@ package main
 
 import (
 	"context"
-	"encoding/json"
 	"fmt"
-	"os"
 
 	"github.com/kerkerj/cwa-weather/cwa"
 	"github.com/spf13/cobra"
@@ -28,9 +26,9 @@ var observeCmd = &cobra.Command{
 			return fmt.Errorf("--city and --station are mutually exclusive")
 		}
 
-		apiKey := os.Getenv("CWA_API_KEY")
-		if apiKey == "" {
-			return fmt.Errorf("CWA_API_KEY environment variable is required")
+		apiKey, err := getAPIKey()
+		if err != nil {
+			return err
 		}
 
 		var opts []cwa.ObserveOption
@@ -49,10 +47,26 @@ var observeCmd = &cobra.Command{
 			return fmt.Errorf("failed to get observation: %w", err)
 		}
 
-		enc := json.NewEncoder(os.Stdout)
-		enc.SetIndent("", "  ")
+		if jsonOutput {
+			return printJSON(resp)
+		}
 
-		return enc.Encode(resp)
+		rec, err := resp.ParseObserveRecords()
+		if err != nil {
+			return err
+		}
+
+		for _, stn := range rec.Station {
+			printHeader(fmt.Sprintf("%s（%s, %s）  %s",
+				stn.StationName, stn.GeoInfo.TownName, stn.GeoInfo.CountyName,
+				stn.ObsTime.DateTime))
+			we := stn.WeatherElement
+			fmt.Printf("  天氣: %s    氣溫: %s°C    濕度: %s%%\n", we.Weather, we.AirTemperature, we.RelativeHumidity)
+			fmt.Printf("  風速: %s m/s    風向: %s°    氣壓: %s hPa\n", we.WindSpeed, we.WindDirection, we.AirPressure)
+			fmt.Printf("  今日降雨: %s mm    紫外線: %s\n", we.Now.Precipitation, we.UVIndex)
+			fmt.Println()
+		}
+		return nil
 	},
 }
 

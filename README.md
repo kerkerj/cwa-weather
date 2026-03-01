@@ -11,7 +11,7 @@
 
 CWA Open Data API CLI and Go library for Taiwan weather data.
 
-Queries forecast and real-time observation data from Taiwan's Central Weather Administration (CWA) Open Data platform. All output is JSON, designed for agent and jq consumption.
+Queries forecast and real-time observation data from Taiwan's Central Weather Administration (CWA) Open Data platform.
 
 ## Installation
 
@@ -43,14 +43,20 @@ cwa-weather forecast --city 台北市    # 台→臺 auto-converted
 # Filter by weather elements
 cwa-weather forecast --city 新北市 --town 板橋區 --element 溫度,天氣現象
 
+# Show 3 days of forecast
+cwa-weather forecast --city 臺北市 --town 中正區 --days 3
+
+# Group by day
+cwa-weather forecast --city 臺北市 --town 中正區 --days 3 --summary
+
 # Filter by time range
 cwa-weather forecast --city 臺北市 --time-from 2026-03-01T06:00:00
 
-# Combine element and time filters
-cwa-weather forecast --city 臺北市 --element 降雨機率 --time-from 2026-03-01T06:00:00 --time-to 2026-03-01T18:00:00
+# Raw JSON output (pipe to jq for field extraction)
+cwa-weather forecast --city 臺北市 --json
 ```
 
-> **Tip**: Element names are defined by CWA API — run a command without `--element` to see all available names in the JSON response.
+> **Tip**: Element names are defined by CWA API — run a command with `--json` and inspect the JSON keys to see all available names.
 
 ### Real-time Observation
 
@@ -186,7 +192,7 @@ Point your agent to the skill files in [`plugins/cwa-weather/skills/`](plugins/c
 
 ## Notes
 
-- **Output**: Always JSON. Pipe to `jq` for field extraction.
+- **Output**: Human-readable text by default. Use `--json` for raw JSON (pipe to `jq` for field extraction).
 - **Supported cities**: All 22 Taiwan cities/counties.
 - **台→臺 auto-conversion**: `台北市` is automatically converted to `臺北市` to match CWA's use of 正體字.
 

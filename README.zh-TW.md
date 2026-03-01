@@ -11,7 +11,7 @@
 
 中央氣象署開放資料 API 的 CLI 工具與 Go 函式庫，用於查詢臺灣天氣資料。
 
-支援鄉鎮預報、即時觀測、36 小時概況、氣象警特報、颱風動態及海象觀測。所有輸出皆為 JSON，適合搭配 agent 或 `jq` 使用。
+支援鄉鎮預報、即時觀測、36 小時概況、氣象警特報、颱風動態及海象觀測。
 
 ## 安裝
 
@@ -43,14 +43,20 @@ cwa-weather forecast --city 台北市    # 台→臺 自動轉換
 # 篩選天氣要素
 cwa-weather forecast --city 新北市 --town 板橋區 --element 溫度,天氣現象
 
+# 顯示 3 天預報
+cwa-weather forecast --city 臺北市 --town 中正區 --days 3
+
+# 按日分組
+cwa-weather forecast --city 臺北市 --town 中正區 --days 3 --summary
+
 # 篩選時間區間
 cwa-weather forecast --city 臺北市 --time-from 2026-03-01T06:00:00
 
-# 同時篩選要素與時間
-cwa-weather forecast --city 臺北市 --element 降雨機率 --time-from 2026-03-01T06:00:00 --time-to 2026-03-01T18:00:00
+# 原始 JSON 輸出（可搭配 jq 擷取欄位）
+cwa-weather forecast --city 臺北市 --json
 ```
 
-> **提示**：天氣要素名稱由氣象署 API 定義，不加 `--element` 即可在 JSON 回應中查看所有可用名稱。
+> **提示**：天氣要素名稱由氣象署 API 定義，使用 `--json` 查看回應中的所有可用欄位名稱。
 
 ### 即時觀測
 
@@ -186,7 +192,7 @@ func main() {
 
 ## 備註
 
-- **輸出格式**：一律 JSON，可搭配 `jq` 擷取欄位。
+- **輸出格式**：預設人類可讀文字，`--json` 輸出原始 JSON（可搭配 `jq` 擷取欄位）。
 - **支援縣市**：全臺 22 縣市。
 - **台→臺 自動轉換**：`台北市` 會自動轉為 `臺北市`，以符合氣象署使用正體字的慣例。
 

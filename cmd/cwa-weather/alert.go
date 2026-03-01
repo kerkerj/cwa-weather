@@ -2,9 +2,7 @@ package main
 
 import (
 	"context"
-	"encoding/json"
 	"fmt"
-	"os"
 
 	"github.com/kerkerj/cwa-weather/cwa"
 	"github.com/spf13/cobra"
@@ -17,9 +15,9 @@ var alertCmd = &cobra.Command{
 	Short: "Get current weather alerts (天氣特報)",
 	Long:  "Get current weather alerts for all cities or a specific city.",
 	RunE: func(cmd *cobra.Command, args []string) error {
-		apiKey := os.Getenv("CWA_API_KEY")
-		if apiKey == "" {
-			return fmt.Errorf("CWA_API_KEY environment variable is required")
+		apiKey, err := getAPIKey()
+		if err != nil {
+			return err
 		}
 
 		client := cwa.NewClient(apiKey)
@@ -29,10 +27,29 @@ var alertCmd = &cobra.Command{
 			return fmt.Errorf("failed to get alerts: %w", err)
 		}
 
-		enc := json.NewEncoder(os.Stdout)
-		enc.SetIndent("", "  ")
+		if jsonOutput {
+			return printJSON(resp)
+		}
 
-		return enc.Encode(resp)
+		rec, err := resp.ParseAlertRecords()
+		if err != nil {
+			return err
+		}
+
+		hasAlert := false
+		for _, loc := range rec.Location {
+			if len(loc.HazardConditions.Hazards) > 0 {
+				hasAlert = true
+				printHeader(loc.LocationName)
+				for _, h := range loc.HazardConditions.Hazards {
+					fmt.Printf("  %s（%s）\n", h.Info.Phenomena, h.Info.Significance)
+				}
+			}
+		}
+		if !hasAlert {
+			fmt.Println("目前無天氣特報。")
+		}
+		return nil
 	},
 }
 

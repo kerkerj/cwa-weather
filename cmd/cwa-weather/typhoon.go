@@ -2,9 +2,7 @@ package main
 
 import (
 	"context"
-	"encoding/json"
 	"fmt"
-	"os"
 
 	"github.com/kerkerj/cwa-weather/cwa"
 	"github.com/spf13/cobra"
@@ -20,9 +18,9 @@ var typhoonCmd = &cobra.Command{
 	Short: "Get tropical cyclone tracking data (颱風)",
 	Long:  "Get tropical cyclone tracking data for all active typhoons or filter by TD number / dataset.",
 	RunE: func(cmd *cobra.Command, args []string) error {
-		apiKey := os.Getenv("CWA_API_KEY")
-		if apiKey == "" {
-			return fmt.Errorf("CWA_API_KEY environment variable is required")
+		apiKey, err := getAPIKey()
+		if err != nil {
+			return err
 		}
 
 		client := cwa.NewClient(apiKey)
@@ -40,10 +38,31 @@ var typhoonCmd = &cobra.Command{
 			return fmt.Errorf("failed to get typhoon data: %w", err)
 		}
 
-		enc := json.NewEncoder(os.Stdout)
-		enc.SetIndent("", "  ")
+		if jsonOutput {
+			return printJSON(resp)
+		}
 
-		return enc.Encode(resp)
+		rec, err := resp.ParseTyphoonRecords()
+		if err != nil {
+			return err
+		}
+
+		tcs := rec.TropicalCyclones.TropicalCyclone
+		if len(tcs) == 0 {
+			fmt.Println("目前無颱風資訊。")
+			return nil
+		}
+		for _, tc := range tcs {
+			printHeader(fmt.Sprintf("%s (%s) TD-%s", tc.CwaTyphoonName, tc.TyphoonName, tc.CwaTdNo))
+			if tc.AnalysisData != nil && len(tc.AnalysisData.Fix) > 0 {
+				fix := tc.AnalysisData.Fix[len(tc.AnalysisData.Fix)-1]
+				fmt.Printf("  位置: %s°E %s°N    氣壓: %s hPa\n", fix.CoordinateLongitude, fix.CoordinateLatitude, fix.Pressure)
+				fmt.Printf("  最大風速: %s m/s    陣風: %s m/s\n", fix.MaxWindSpeed, fix.MaxGustSpeed)
+				fmt.Printf("  移動: %s km/h 往 %s\n", fix.MovingSpeed, fix.MovingDirection)
+			}
+			fmt.Println()
+		}
+		return nil
 	},
 }
 
