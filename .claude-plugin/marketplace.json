@@ -1,0 +1,17 @@
+{
+  "name": "cwa-weather",
+  "version": "1.0",
+  "owner": {
+    "name": "kerkerj"
+  },
+  "plugins": [
+    {
+      "name": "cwa-weather",
+      "description": "Taiwan CWA weather data CLI skill — forecast, observation, alerts, typhoon, marine",
+      "source": {
+        "type": "directory",
+        "path": "./plugins/cwa-weather"
+      }
+    }
+  ]
+}

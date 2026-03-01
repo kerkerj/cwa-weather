@@ -162,6 +162,28 @@ func main() {
 }
 ```
 
+## AI Agent Integration
+
+This project includes skill files so AI agents can query Taiwan weather data via the CLI.
+
+Requires `cwa-weather` CLI installed and `CWA_API_KEY` env var set.
+
+### Claude Code (Plugin)
+
+```
+/plugin marketplace add kerkerj/cwa-weather
+/plugin install cwa-weather@kerkerj-cwa-weather
+```
+
+Once installed, ask Claude things like:
+- "What's the weather in Taipei?"
+- "Any typhoons right now?"
+- "Show me weather alerts"
+
+### Other AI Agents
+
+Point your agent to the skill files in [`skill/`](skill/) for command reference and usage instructions.
+
 ## Notes
 
 - **Output**: Always JSON. Pipe to `jq` for field extraction.

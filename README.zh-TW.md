@@ -162,6 +162,28 @@ func main() {
 }
 ```
 
+## AI Agent 整合
+
+本專案包含 skill 檔案，讓 AI agent 可以透過 CLI 查詢天氣資料。
+
+需要先安裝 `cwa-weather` CLI 並設定 `CWA_API_KEY` 環境變數。
+
+### Claude Code（Plugin）
+
+```
+/plugin marketplace add kerkerj/cwa-weather
+/plugin install cwa-weather@kerkerj-cwa-weather
+```
+
+安裝後直接問 Claude：
+- 「台北市今天天氣如何？」
+- 「現在有颱風嗎？」
+- 「氣象警特報」
+
+### 其他 AI Agent
+
+將 agent 指向 [`skill/`](skill/) 目錄中的 skill 檔案，即可取得指令參考與使用說明。
+
 ## 備註
 
 - **輸出格式**：一律 JSON，可搭配 `jq` 擷取欄位。

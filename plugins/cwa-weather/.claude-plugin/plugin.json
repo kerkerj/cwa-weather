@@ -1,0 +1,8 @@
+{
+  "name": "cwa-weather",
+  "description": "Query Taiwan weather data from CWA Open Data API",
+  "version": "0.1.0",
+  "author": {
+    "name": "kerkerj"
+  }
+}
