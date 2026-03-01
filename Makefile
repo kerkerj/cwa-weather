@@ -1,10 +1,18 @@
-.PHONY: build test lint sec cover check clean
+.PHONY: build test fmt lint sec cover check clean
 
 build:
 	go build -o bin/cwa-weather ./cmd/cwa-weather
 
 test:
 	go test -v ./...
+
+fmt:
+	@UNFMT=$$(gofmt -s -l .); \
+	if [ -n "$$UNFMT" ]; then \
+		echo "FAIL: files not formatted with gofmt -s:"; \
+		echo "$$UNFMT"; \
+		exit 1; \
+	fi
 
 lint:
 	golangci-lint run ./...
@@ -22,7 +30,7 @@ cover:
 	fi
 	@rm -f coverage.out
 
-check: test cover lint sec
+check: test cover fmt lint sec
 
 clean:
 	rm -rf bin/
