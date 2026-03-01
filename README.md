@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-blueviolet)](https://claude.ai)
 [![Skill Scanner](https://img.shields.io/badge/Skill%20Scanner-SAFE-brightgreen)](https://github.com/cisco-ai-defense/skill-scanner)
-![coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/kerkerj/6e8ceb0d7091bfa999901383f6486a29/raw/coverage.json)
+![coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/kerkerj/6e8ceb0d7091bfa999901383f6486a29/raw/cwa-coverage.json)
 
 [正體中文](README.zh-TW.md)
 

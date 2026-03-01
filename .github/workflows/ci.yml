@@ -40,7 +40,7 @@ jobs:
         with:
           auth: ${{ secrets.GIST_TOKEN }}
           gistID: ${{ vars.COVERAGE_GIST_ID }}
-          filename: coverage.json
+          filename: cwa-coverage.json
           label: coverage
           message: ${{ steps.coverage.outputs.total }}
           valColorRange: ${{ steps.coverage.outputs.total_num }}
