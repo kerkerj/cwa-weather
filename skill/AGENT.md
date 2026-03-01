@@ -1,76 +1,31 @@
-# CWA Weather Agent Instructions
+# cwa-weather — Agent Instructions
 
-## When to use
-- User asks about Taiwan weather (forecast, temperature, rain, typhoon)
-- Need real-time weather observation data for Taiwan locations
+Taiwan CWA Open Data CLI. Requires `CWA_API_KEY` env var. Output is always JSON.
 
-## Prerequisites
-- `cwa-weather` CLI installed
-- `CWA_API_KEY` environment variable set
+## Command Selection
 
-## Commands
+| User intent | Command |
+|-------------|---------|
+| Weather for a specific town (鄉鎮區) | `forecast --city X --town Y` |
+| Weather for a city (all towns) | `forecast --city X` |
+| Current conditions / temperature / rain now | `observe --city X` or `observe --station Y` |
+| Quick city-level forecast (36hr) | `overview --city X` |
+| Weather warnings / 特報 | `alert` or `alert --city X` |
+| Typhoon info / 颱風 | `typhoon` |
+| Sea conditions / 海象 / waves | `sea` or `sea --station X` |
+| Anything else (83 CWA endpoints) | `query DATAID -p key=value` |
+| List available cities | `cities` |
 
-### Forecast (township-level)
-`cwa-weather forecast --city "城市" --town "鄉鎮區"`
-`cwa-weather forecast --city "城市" --element "溫度,天氣現象"`
-`cwa-weather forecast --city "城市" --time-from "2026-03-01T06:00:00" --time-to "2026-03-01T18:00:00"`
+## Reduce output size
 
-**Forecast filter flags:**
-- `--element` — filter weather elements (comma-separated, e.g. 溫度,天氣現象,降雨機率)
-- `--time-from` — start time (yyyy-MM-ddThh:mm:ss)
-- `--time-to` — end time (yyyy-MM-ddThh:mm:ss)
+Use `--element` to filter specific weather elements (reduces ~80% tokens):
+- Forecast: Chinese names — `--element 溫度,天氣現象,降雨機率`
+- Observe: English names — `--element AirTemperature,Weather`
+- Use `--time-from` / `--time-to` to narrow time range
 
-### Real-time Observation
-`cwa-weather observe --city "城市"`
-`cwa-weather observe --station "站名"`
-`cwa-weather observe --city "城市" --element "AirTemperature,Weather"`
+## Key behaviors
 
-**Observe filter flags:**
-- `--element` — filter weather elements (comma-separated, valid: Weather, VisibilityDescription, SunshineDuration, Now, WindDirection, WindSpeed, AirTemperature, RelativeHumidity, AirPressure, UVIndex, Max10MinAverage, GustInfo, DailyHigh, DailyLow)
-
-### 36-hour City-level Forecast (Overview)
-`cwa-weather overview --city "城市"`
-`cwa-weather overview --city "城市" --element "Wx,PoP"`
-`cwa-weather overview --city "城市" --time-from "2026-03-01T06:00:00" --time-to "2026-03-01T18:00:00"`
-
-**Overview filter flags:**
-- `--element` — filter weather elements (comma-separated, e.g. Wx,PoP,MinT,MaxT)
-- `--time-from` — start time (yyyy-MM-ddThh:mm:ss)
-- `--time-to` — end time (yyyy-MM-ddThh:mm:ss)
-
-### Weather Alerts
-`cwa-weather alert`
-`cwa-weather alert --city "城市"`
-
-**Alert filter flags:**
-- `--city` — filter alerts by city name
-
-### Typhoon Tracking
-`cwa-weather typhoon`
-`cwa-weather typhoon --td-no "03" --dataset "ForecastData"`
-
-**Typhoon filter flags:**
-- `--td-no` — tropical depression number
-- `--dataset` — dataset type (e.g. ForecastData)
-
-### Marine Observation (海象)
-`cwa-weather sea`
-`cwa-weather sea --station "站名"`
-
-**Sea filter flags:**
-- `--station` — filter by station name
-
-### Generic Query (any CWA endpoint)
-`cwa-weather query DATAID -p key=value`
-
-### List Cities/Towns
-`cwa-weather cities`
-`cwa-weather cities --city "城市"`
-
-## Output
-All output is JSON. Use jq to extract specific fields.
-
-## Notes
-- City names use traditional Chinese (臺). Tool auto-converts 台→臺.
-- Forecast returns all weather elements (temperature, rain probability, wind, humidity, etc.)
-- Observation returns real-time station data (may not have one per township)
+- `台→臺` auto-converted — accept either form from user
+- Run `cwa-weather <command> --help` for full flag details
+- All commands return full CWA JSON — use `jq` to extract specific fields
+- No observation station per township; query by city returns all nearby stations

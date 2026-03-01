@@ -1,5 +1,10 @@
 # cwa-weather
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/kerkerj/cwa-weather)](https://goreportcard.com/report/github.com/kerkerj/cwa-weather)
+[![Go Reference](https://pkg.go.dev/badge/github.com/kerkerj/cwa-weather.svg)](https://pkg.go.dev/github.com/kerkerj/cwa-weather)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-blueviolet)](https://claude.ai)
+
 CWA Open Data API CLI and Go library for Taiwan weather data.
 
 Queries forecast and real-time observation data from Taiwan's Central Weather Administration (CWA) Open Data platform. All output is JSON, designed for agent and jq consumption.
