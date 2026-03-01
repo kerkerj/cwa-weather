@@ -12,6 +12,14 @@ make sec        # gosec ./...
 make check      # test + lint + sec (run before every commit)
 ```
 
+## Git Hooks
+
+Pre-commit hook runs `make check` (test + lint + sec) automatically:
+
+```bash
+echo 'make check' > .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+```
+
 ## Conventions
 
 - **Auth**: HTTP header `Authorization: {apikey}` (NOT query param — avoid log leakage)
