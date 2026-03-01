@@ -9,9 +9,9 @@ import (
 
 func TestNormalizeCity(t *testing.T) {
 	tests := []struct {
-		name string
+		name  string
 		input string
-		want string
+		want  string
 	}{
 		{"台北市 to 臺北市", "台北市", "臺北市"},
 		{"台中市 to 臺中市", "台中市", "臺中市"},

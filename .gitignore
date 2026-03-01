@@ -1,6 +1,6 @@
 # Build output
 bin/
-cwa-weather
+/cwa-weather
 
 # Claude Code local settings
 .claude/settings.local.json

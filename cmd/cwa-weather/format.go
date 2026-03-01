@@ -169,4 +169,3 @@ func formatTimeRange(start, end string) string {
 		s.Format("01/02"), s.Hour(), s.Minute(),
 		e.Format("01/02"), e.Hour(), e.Minute())
 }
-
