@@ -9,12 +9,13 @@ make build      # go build -o bin/cwa-weather ./cmd/cwa-weather
 make test       # go test -v ./...
 make lint       # golangci-lint run ./...
 make sec        # gosec ./...
-make check      # test + lint + sec (run before every commit)
+make cover      # coverage check (75% threshold)
+make check      # test + cover + lint + sec (run before every commit)
 ```
 
 ## Git Hooks
 
-Pre-commit hook runs `make check` (test + lint + sec) automatically:
+Pre-commit hook runs `make check` (test + cover + lint + sec) automatically:
 
 ```bash
 echo 'make check' > .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
