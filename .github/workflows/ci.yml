@@ -26,8 +26,26 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version-file: go.mod
-      - run: go test -v ./...
+      - run: go test -v -coverprofile=coverage.out ./...
       - run: go build ./...
+      - name: Extract coverage
+        id: coverage
+        run: |
+          TOTAL=$(go tool cover -func=coverage.out | grep total | awk '{print $3}')
+          echo "total=$TOTAL" >> "$GITHUB_OUTPUT"
+          echo "total_num=${TOTAL%\%}" >> "$GITHUB_OUTPUT"
+      - name: Update coverage badge
+        if: github.ref == 'refs/heads/main'
+        uses: Schneegans/dynamic-badges-action@v1.7.0
+        with:
+          auth: ${{ secrets.GIST_TOKEN }}
+          gistID: ${{ vars.COVERAGE_GIST_ID }}
+          filename: coverage.json
+          label: coverage
+          message: ${{ steps.coverage.outputs.total }}
+          valColorRange: ${{ steps.coverage.outputs.total_num }}
+          minColorRange: 0
+          maxColorRange: 100
 
   lint:
     runs-on: ubuntu-latest
