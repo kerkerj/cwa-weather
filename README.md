@@ -15,6 +15,15 @@ Queries forecast and real-time observation data from Taiwan's Central Weather Ad
 
 ## Installation
 
+### Homebrew
+
+```bash
+brew tap kerkerj/tap
+brew install cwa-weather
+```
+
+### Go
+
 ```bash
 go install github.com/kerkerj/cwa-weather/cmd/cwa-weather@latest
 ```

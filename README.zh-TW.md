@@ -15,6 +15,15 @@
 
 ## 安裝
 
+### Homebrew
+
+```bash
+brew tap kerkerj/tap
+brew install cwa-weather
+```
+
+### Go
+
 ```bash
 go install github.com/kerkerj/cwa-weather/cmd/cwa-weather@latest
 ```
