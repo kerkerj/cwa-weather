@@ -20,5 +20,18 @@ archives:
 checksum:
   name_template: "checksums.txt"
 
+brews:
+  - repository:
+      owner: kerkerj
+      name: homebrew-tap
+      token: "{{ .Env.HOMEBREW_TAP_TOKEN }}"
+    homepage: "https://github.com/kerkerj/cwa-weather"
+    description: "CWA Open Data API CLI for Taiwan weather data"
+    license: "MIT"
+    install: |
+      bin.install "cwa-weather"
+    test: |
+      system "#{bin}/cwa-weather", "--version"
+
 changelog:
   sort: asc
