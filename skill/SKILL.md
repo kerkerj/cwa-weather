@@ -25,6 +25,8 @@ Run `cwa-weather <command> --help` for all flags and details.
 ## Notes
 
 - `台→臺` auto-converted (e.g. `台北市` → `臺北市`)
-- Forecast elements use Chinese names (溫度, 天氣現象, 降雨機率)
-- Observe elements use English (AirTemperature, Weather, WindSpeed)
-- `--element` accepts comma-separated values for all commands that support it
+- `--element` values are defined by CWA API (not user's choice of language):
+  - forecast/overview: `溫度`, `天氣現象`, `降雨機率` etc.
+  - observe: `AirTemperature`, `Weather`, `WindSpeed` etc.
+- To discover available elements: run command without `--element`, inspect the JSON keys
+- `--element` accepts comma-separated values

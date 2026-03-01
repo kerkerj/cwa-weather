@@ -160,7 +160,7 @@ func main() {
 
 - **Output**: Always JSON. Pipe to `jq` for field extraction.
 - **Supported cities**: All 22 Taiwan cities/counties.
-- **台→臺 auto-conversion**: `台北市` is automatically converted to `臺北市` to match CWA naming.
+- **台→臺 auto-conversion**: `台北市` is automatically converted to `臺北市` to match CWA's use of 正體字.
 
 ## License
 

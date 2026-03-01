@@ -18,14 +18,15 @@ Taiwan CWA Open Data CLI. Requires `CWA_API_KEY` env var. Output is always JSON.
 
 ## Reduce output size
 
-Use `--element` to filter specific weather elements (reduces ~80% tokens):
-- Forecast: Chinese names — `--element 溫度,天氣現象,降雨機率`
-- Observe: English names — `--element AirTemperature,Weather`
+Use `--element` to filter (reduces ~80% tokens). Element names are CWA API-defined:
+- forecast/overview: `--element 溫度,天氣現象,降雨機率`
+- observe: `--element AirTemperature,Weather`
 - Use `--time-from` / `--time-to` to narrow time range
+- To discover available elements: run without `--element`, inspect JSON keys
 
 ## Key behaviors
 
-- `台→臺` auto-converted — accept either form from user
+- `台→臺` auto-converted (正體字) — accept either form from user
 - Run `cwa-weather <command> --help` for full flag details
 - All commands return full CWA JSON — use `jq` to extract specific fields
 - No observation station per township; query by city returns all nearby stations
