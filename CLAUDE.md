@@ -35,7 +35,8 @@ echo 'make check' > .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
 - `cwa/` — Go library (Client, Forecast, Observe, Overview, Alert, Typhoon, Sea)
 - `cmd/cwa-weather/` — CLI subcommands (cobra)
 - `testdata/` — API fixture JSON files for httptest
-- `skill/` — Agent skill files (SKILL.md for Claude Code skills, AGENT.md for agent mode)
+- `skill/` — Agent skill files for general AI agents (SKILL.md, AGENT.md)
+- `plugins/cwa-weather/` — Claude Code plugin (marketplace installable)
 
 ## Adding a New Subcommand
 
