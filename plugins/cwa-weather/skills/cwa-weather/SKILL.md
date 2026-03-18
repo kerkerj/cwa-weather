@@ -29,6 +29,7 @@ Run `cwa-weather <command> --help` for all flags and details.
 - Use `--json` flag for raw JSON output (pipe to `jq` for field extraction)
 - If `CWA_API_KEY` is not set, commands exit with a clear error message
 - `台→臺` auto-converted (e.g. `台北市` → `臺北市`)
+- `observe`: `--city` and `--station` are mutually exclusive — use one or the other, not both
 - `--element` accepts comma-separated values (CWA API-defined names)
 - `forecast --days N` shows N days of data (1-3, default 1)
 - `forecast --summary` groups entries by day instead of flat list

@@ -31,5 +31,6 @@ Use `--element` to filter (reduces ~80% tokens). Element names are CWA API-defin
 - Use `--json` for raw JSON when needed (pipe to `jq` for field extraction)
 - `台→臺` auto-converted (正體字) — accept either form from user
 - If `CWA_API_KEY` is missing, stop and inform the user to set it
+- `observe`: `--city` and `--station` are mutually exclusive — use one or the other, not both
 - No observation station per township; query by city returns all nearby stations
 - Run `cwa-weather <command> --help` for full flag details
