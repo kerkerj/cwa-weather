@@ -195,6 +195,15 @@ Once installed, ask Claude things like:
 - "Any typhoons right now?"
 - "Show me weather alerts"
 
+### Codex (Plugin)
+
+```bash
+codex plugin marketplace add kerkerj/cwa-weather
+codex plugin add cwa-weather@kerkerj-cwa-weather
+```
+
+Start a new Codex session after installation, then ask the same weather questions directly.
+
 ### Other AI Agents
 
 Point your agent to the skill files in [`plugins/cwa-weather/skills/`](plugins/cwa-weather/skills/) for command reference and usage instructions.
