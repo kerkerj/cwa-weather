@@ -83,6 +83,6 @@ jobs:
         with:
           python-version: "3.12"
       - if: steps.filter.outputs.skill == 'true'
-        run: pip install skill-scanner
+        run: pip install cisco-ai-skill-scanner==2.0.13
       - if: steps.filter.outputs.skill == 'true'
         run: skill-scanner scan plugins/cwa-weather/skills/cwa-weather/

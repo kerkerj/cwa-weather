@@ -1,0 +1,35 @@
+{
+  "name": "cwa-weather",
+  "version": "0.1.0",
+  "description": "Query Taiwan weather data from the CWA Open Data API",
+  "author": {
+    "name": "kerkerj",
+    "url": "https://github.com/kerkerj"
+  },
+  "homepage": "https://github.com/kerkerj/cwa-weather",
+  "repository": "https://github.com/kerkerj/cwa-weather",
+  "license": "MIT",
+  "keywords": [
+    "taiwan",
+    "weather",
+    "cwa"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "CWA Weather",
+    "shortDescription": "Query Taiwan weather data",
+    "longDescription": "Query forecasts, observations, alerts, typhoons, and marine data from Taiwan's Central Weather Administration.",
+    "developerName": "kerkerj",
+    "category": "Productivity",
+    "capabilities": [
+      "Read"
+    ],
+    "websiteURL": "https://github.com/kerkerj/cwa-weather",
+    "defaultPrompt": [
+      "What's the weather in Taipei?",
+      "Are there any active weather alerts in Taiwan?",
+      "Is there a typhoon near Taiwan right now?"
+    ],
+    "brandColor": "#1D70B7"
+  }
+}

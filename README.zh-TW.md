@@ -195,6 +195,15 @@ func main() {
 - 「現在有颱風嗎？」
 - 「氣象警特報」
 
+### Codex（Plugin）
+
+```bash
+codex plugin marketplace add kerkerj/cwa-weather
+codex plugin add cwa-weather@kerkerj-cwa-weather
+```
+
+安裝後開一個新的 Codex session，就可以直接詢問天氣。
+
 ### 其他 AI Agent
 
 將 agent 指向 [`plugins/cwa-weather/skills/`](plugins/cwa-weather/skills/) 目錄中的 skill 檔案，即可取得指令參考與使用說明。
