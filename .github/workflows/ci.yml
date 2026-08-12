@@ -65,8 +65,7 @@ jobs:
       - uses: actions/setup-go@v7
         with:
           go-version-file: go.mod
-      # v2.24.0+ needs go >= 1.25; setup-go pins GOTOOLCHAIN=local to go.mod's 1.24.5
-      - run: go install github.com/securego/gosec/v2/cmd/gosec@v2.23.0
+      - run: go install github.com/securego/gosec/v2/cmd/gosec@v2.28.0
       - run: gosec ./...
 
   skill-scan:
