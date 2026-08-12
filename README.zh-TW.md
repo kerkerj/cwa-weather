@@ -1,6 +1,6 @@
 # cwa-weather
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/kerkerj/cwa-weather)](https://goreportcard.com/report/github.com/kerkerj/cwa-weather)
+[![CI](https://github.com/kerkerj/cwa-weather/actions/workflows/ci.yml/badge.svg)](https://github.com/kerkerj/cwa-weather/actions/workflows/ci.yml)
 [![Go Reference](https://pkg.go.dev/badge/github.com/kerkerj/cwa-weather.svg)](https://pkg.go.dev/github.com/kerkerj/cwa-weather)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-blueviolet)](https://claude.ai)
