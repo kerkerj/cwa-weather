@@ -67,6 +67,8 @@ func (c *Client) Query(ctx context.Context, dataID string, params map[string]str
 
 	req.Header.Set("Authorization", c.apiKey)
 
+	// #nosec G704 -- host is the hardcoded defaultBaseURL; SetBaseURL is a
+	// test-only seam and params only reach the query string.
 	resp, err := c.httpClient.Do(req)
 	if err != nil {
 		return nil, fmt.Errorf("failed to execute request: %w", err)
